@@ -1,0 +1,241 @@
+{
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "cosmetics.json",
+      "sha": "f460d7ce2c5e0e561deed123aac5537968279e50"
+    },
+    {
+      "path": "economy.json",
+      "sha": "df8e6d29f6678e78c7c96fad16614e4bebdccb8d"
+    },
+    {
+      "path": "headlines.json",
+      "sha": "a5bb68b499c7689b7a8e6146b1038a88a5834341"
+    },
+    {
+      "path": "avatars/ace.png",
+      "sha": "5800c8fb46e28ed8604a32096bdc2670af7e1169"
+    },
+    {
+      "path": "avatars/astro.png",
+      "sha": "409d48fe4ee12c36c8f7005b4a200e69c48144d7"
+    },
+    {
+      "path": "avatars/bear-pro.png",
+      "sha": "373ae74adc11bcb8cbbb8a3eac09d8f17a8dc68d"
+    },
+    {
+      "path": "avatars/birdie.png",
+      "sha": "e454538090dd4cc58f8ffa0c91972c9461e7858e"
+    },
+    {
+      "path": "avatars/bolt.png",
+      "sha": "c4e78dc8e341251c317ffc2273dd993efa5ba28e"
+    },
+    {
+      "path": "avatars/captain.png",
+      "sha": "fd2ee4cc96febf1e2ba838b70f3293b96225d948"
+    },
+    {
+      "path": "avatars/cool-cat.png",
+      "sha": "27a23d09cce2b355c08605c9156a8da182123e47"
+    },
+    {
+      "path": "avatars/crimson.png",
+      "sha": "963c5388fdf8c24a5a2e2c4e8fb8fa6111cf601d"
+    },
+    {
+      "path": "avatars/cyber-cat.png",
+      "sha": "ac0f14b5adb0a7136952babb977adc9a5db826a2"
+    },
+    {
+      "path": "avatars/diamond-birdie.png",
+      "sha": "f5dd4a708a4f8c61c3795f4fb416d9003a03e4d8"
+    },
+    {
+      "path": "avatars/eagle.png",
+      "sha": "83ce0106773f61967a842db6069239fdd18a7e4f"
+    },
+    {
+      "path": "avatars/galaxy-fox.png",
+      "sha": "8ec65ad65f4a7df364472aab1f4e495d017685f0"
+    },
+    {
+      "path": "avatars/gold-shadow.png",
+      "sha": "cddc9963650c7227f843f32eedfff290da5aac5f"
+    },
+    {
+      "path": "avatars/inferno-sentinel.png",
+      "sha": "93d6974a973f34edda930859233d07bbbccbbec1"
+    },
+    {
+      "path": "avatars/jade.png",
+      "sha": "51dc4e90db7ae3f464cac0c2c0c52437f020d162"
+    },
+    {
+      "path": "avatars/neon-fox.png",
+      "sha": "60c4021599906c00db9f3a1f2d6ad87c8e860c5b"
+    },
+    {
+      "path": "avatars/night-wolf.png",
+      "sha": "9d2e9902a0e2f8ecadb0aac0905a0c169a2fe962"
+    },
+    {
+      "path": "avatars/owl-wing.png",
+      "sha": "befc36a3876a7986621eb65e91eab6062cea5888"
+    },
+    {
+      "path": "avatars/phantom.png",
+      "sha": "40ee2c5f73d155b019a5ceb571f89db51f181844"
+    },
+    {
+      "path": "avatars/pirate.png",
+      "sha": "8d294f8292d4cccd76fe97e04f9caee31432ab43"
+    },
+    {
+      "path": "avatars/royal-ace.png",
+      "sha": "f9b1418b1b77767eb4371df0fc19b50bf4707cf1"
+    },
+    {
+      "path": "avatars/sentinel.png",
+      "sha": "62c395f58d3460375d8cb9146970bcf11a1a3059"
+    },
+    {
+      "path": "avatars/shadow.png",
+      "sha": "2b6701c5449c5480b5d7ffa686645e86b29909ad"
+    },
+    {
+      "path": "avatars/skye.png",
+      "sha": "0cacc26034c5e6cb641a325529b9c19380fde7dc"
+    },
+    {
+      "path": "avatars/static.png",
+      "sha": "a8532dacfa4b451b0b9cd402bdc476ce72c83175"
+    },
+    {
+      "path": "avatars/storm-viking.png",
+      "sha": "dd95a1f8b9018ac43a62d8ee2eb2f91d75b2f614"
+    },
+    {
+      "path": "avatars/viking.png",
+      "sha": "f67ccd30eb2a165bfb354281c4dc11e863d30497"
+    },
+    {
+      "path": "avatars/violet.png",
+      "sha": "551bb3ba6b579537fbead8d49501b3c2d839e2b6"
+    },
+    {
+      "path": "emotes/angry.png",
+      "sha": "ef4ed5938b89deeda5c29a95d3edda63061e5706"
+    },
+    {
+      "path": "emotes/clap.png",
+      "sha": "755546722e307f5a88fe5738ccb0831c1dece9d5"
+    },
+    {
+      "path": "emotes/cool.png",
+      "sha": "ea2da38f438a733c3de9fca649148ea899d4ff4a"
+    },
+    {
+      "path": "emotes/crown.png",
+      "sha": "6ffbc683e2048949aabfbee612ed36e50f9fc953"
+    },
+    {
+      "path": "emotes/cry.png",
+      "sha": "d252645b8587535601135a5206fefabee6b84b16"
+    },
+    {
+      "path": "emotes/fire.png",
+      "sha": "12ba24461d6053f8a02d2723dcfefcbb55d75e31"
+    },
+    {
+      "path": "emotes/gg.png",
+      "sha": "7a6f6ed0b7b7ecacf6085c662c26ddac3ba9a8a0"
+    },
+    {
+      "path": "emotes/heart.png",
+      "sha": "f7a42fe0a251d11b877efa5be31e35b825128056"
+    },
+    {
+      "path": "emotes/laugh.png",
+      "sha": "e43d2fabced7a9a6ae8e9c8711aeae313e741f23"
+    },
+    {
+      "path": "emotes/skull.png",
+      "sha": "03e36eee8ef1181f255a25ee37655da3f2307df1"
+    },
+    {
+      "path": "emotes/sleepy.png",
+      "sha": "b9b30ecbf50ad07fbfbe8c12042e3a30f68fd374"
+    },
+    {
+      "path": "emotes/thinking.png",
+      "sha": "593f69e6544b85375d75042bf80c32c7b388c366"
+    },
+    {
+      "path": "emotes/thumbs-up.png",
+      "sha": "94dfc8e88cd3a4a8495012f5dfdd709135b4a989"
+    },
+    {
+      "path": "emotes/trophy.png",
+      "sha": "e5e361f5fa7ddbc670894372d893d18496c665f5"
+    },
+    {
+      "path": "emotes/wave.png",
+      "sha": "09caa1217b8c93d0f8e2df72c334b62682e82051"
+    },
+    {
+      "path": "emotes/wow.png",
+      "sha": "eb14b4b99d64522534c53c7a95c305a025d13fbd"
+    },
+    {
+      "path": "floaters/book.png",
+      "sha": "a508aaa45e45f89b722432b662372113853f5478"
+    },
+    {
+      "path": "floaters/card.png",
+      "sha": "1ba847038d0ccbc3efeedd54a857a5b497bd2d8f"
+    },
+    {
+      "path": "floaters/cube.png",
+      "sha": "4cfe597c29e0dec9d7fc08ef6b88d8618b3d4254"
+    },
+    {
+      "path": "floaters/golf-ball.png",
+      "sha": "4ac7d9373aff8c62873d04edefa0d7bbebb2ace4"
+    },
+    {
+      "path": "floaters/jet.png",
+      "sha": "440ecc6c92dc8f7043e7b605598f657f8919c0e9"
+    },
+    {
+      "path": "floaters/map.png",
+      "sha": "75e4a11207313a97c867b9b4c3a8e10defb5e301"
+    },
+    {
+      "path": "games/2d-clash/store.json",
+      "sha": "bdd06d7402e43b877d01e8d01bee0e91be4216d9"
+    },
+    {
+      "path": "games/borderline/store.json",
+      "sha": "f92b7102c4809b1a383cb4c3fd96443cf0b8ebdc"
+    },
+    {
+      "path": "games/card-combat/store.json",
+      "sha": "1f615f764c2cd265c5d2490a90cac751036ecc93"
+    },
+    {
+      "path": "games/nato-squad/store.json",
+      "sha": "83f09a0bffac551ebb160ac1364222f124594ece"
+    },
+    {
+      "path": "games/pintally/store.json",
+      "sha": "f92b7102c4809b1a383cb4c3fd96443cf0b8ebdc"
+    },
+    {
+      "path": "games/storyhub/store.json",
+      "sha": "f92b7102c4809b1a383cb4c3fd96443cf0b8ebdc"
+    }
+  ]
+}

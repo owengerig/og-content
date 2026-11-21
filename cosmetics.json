@@ -1,0 +1,270 @@
+{
+  "avatars": [
+    {
+      "id": "shadow",
+      "name": "Shadow",
+      "rarity": "default",
+      "file": "avatars/shadow.png"
+    },
+    {
+      "id": "violet",
+      "name": "Violet",
+      "rarity": "default",
+      "file": "avatars/violet.png"
+    },
+    {
+      "id": "neon-fox",
+      "name": "Neon Fox",
+      "rarity": "default",
+      "file": "avatars/neon-fox.png"
+    },
+    {
+      "id": "sentinel",
+      "name": "Sentinel",
+      "rarity": "default",
+      "file": "avatars/sentinel.png"
+    },
+    {
+      "id": "ace",
+      "name": "Ace",
+      "rarity": "default",
+      "file": "avatars/ace.png"
+    },
+    {
+      "id": "skye",
+      "name": "Skye",
+      "rarity": "default",
+      "file": "avatars/skye.png"
+    },
+    {
+      "id": "birdie",
+      "name": "Birdie",
+      "rarity": "default",
+      "file": "avatars/birdie.png"
+    },
+    {
+      "id": "eagle",
+      "name": "Eagle",
+      "rarity": "default",
+      "file": "avatars/eagle.png"
+    },
+    {
+      "id": "crimson",
+      "name": "Crimson",
+      "rarity": "default",
+      "file": "avatars/crimson.png"
+    },
+    {
+      "id": "jade",
+      "name": "Jade",
+      "rarity": "default",
+      "file": "avatars/jade.png"
+    },
+    {
+      "id": "static",
+      "name": "Static",
+      "rarity": "default",
+      "file": "avatars/static.png"
+    },
+    {
+      "id": "night-wolf",
+      "name": "Night Wolf",
+      "rarity": "default",
+      "file": "avatars/night-wolf.png"
+    },
+    {
+      "id": "cool-cat",
+      "name": "Cool Cat",
+      "rarity": "default",
+      "file": "avatars/cool-cat.png"
+    },
+    {
+      "id": "bolt",
+      "name": "Bolt",
+      "rarity": "default",
+      "file": "avatars/bolt.png"
+    },
+    {
+      "id": "captain",
+      "name": "Captain",
+      "rarity": "default",
+      "file": "avatars/captain.png"
+    },
+    {
+      "id": "viking",
+      "name": "Viking",
+      "rarity": "default",
+      "file": "avatars/viking.png"
+    },
+    {
+      "id": "pirate",
+      "name": "Pirate",
+      "rarity": "default",
+      "file": "avatars/pirate.png"
+    },
+    {
+      "id": "astro",
+      "name": "Astro",
+      "rarity": "default",
+      "file": "avatars/astro.png"
+    },
+    {
+      "id": "bear-pro",
+      "name": "Bear Pro",
+      "rarity": "default",
+      "file": "avatars/bear-pro.png"
+    },
+    {
+      "id": "owl-wing",
+      "name": "Owl Wing",
+      "rarity": "default",
+      "file": "avatars/owl-wing.png"
+    },
+    {
+      "id": "inferno-sentinel",
+      "name": "Inferno Sentinel",
+      "rarity": "rare",
+      "file": "avatars/inferno-sentinel.png"
+    },
+    {
+      "id": "royal-ace",
+      "name": "Royal Ace",
+      "rarity": "rare",
+      "file": "avatars/royal-ace.png"
+    },
+    {
+      "id": "cyber-cat",
+      "name": "Cyber Cat",
+      "rarity": "rare",
+      "file": "avatars/cyber-cat.png"
+    },
+    {
+      "id": "gold-shadow",
+      "name": "Gold Shadow",
+      "rarity": "epic",
+      "file": "avatars/gold-shadow.png"
+    },
+    {
+      "id": "diamond-birdie",
+      "name": "Diamond Birdie",
+      "rarity": "epic",
+      "file": "avatars/diamond-birdie.png"
+    },
+    {
+      "id": "storm-viking",
+      "name": "Storm Viking",
+      "rarity": "epic",
+      "file": "avatars/storm-viking.png"
+    },
+    {
+      "id": "galaxy-fox",
+      "name": "Galaxy Fox",
+      "rarity": "mythic",
+      "file": "avatars/galaxy-fox.png"
+    },
+    {
+      "id": "phantom",
+      "name": "Phantom",
+      "rarity": "mythic",
+      "file": "avatars/phantom.png"
+    }
+  ],
+  "emotes": [
+    {
+      "id": "gg",
+      "name": "GG",
+      "rarity": "default",
+      "file": "emotes/gg.png"
+    },
+    {
+      "id": "thumbs-up",
+      "name": "Thumbs Up",
+      "rarity": "default",
+      "file": "emotes/thumbs-up.png"
+    },
+    {
+      "id": "laugh",
+      "name": "LOL",
+      "rarity": "default",
+      "file": "emotes/laugh.png"
+    },
+    {
+      "id": "wow",
+      "name": "Wow",
+      "rarity": "default",
+      "file": "emotes/wow.png"
+    },
+    {
+      "id": "heart",
+      "name": "Heart",
+      "rarity": "default",
+      "file": "emotes/heart.png"
+    },
+    {
+      "id": "wave",
+      "name": "Wave",
+      "rarity": "default",
+      "file": "emotes/wave.png"
+    },
+    {
+      "id": "cool",
+      "name": "Too Cool",
+      "rarity": "common",
+      "file": "emotes/cool.png"
+    },
+    {
+      "id": "clap",
+      "name": "Clap",
+      "rarity": "common",
+      "file": "emotes/clap.png"
+    },
+    {
+      "id": "angry",
+      "name": "Rage",
+      "rarity": "rare",
+      "file": "emotes/angry.png"
+    },
+    {
+      "id": "cry",
+      "name": "Tears",
+      "rarity": "rare",
+      "file": "emotes/cry.png"
+    },
+    {
+      "id": "thinking",
+      "name": "Hmm",
+      "rarity": "rare",
+      "file": "emotes/thinking.png"
+    },
+    {
+      "id": "sleepy",
+      "name": "Sleepy",
+      "rarity": "epic",
+      "file": "emotes/sleepy.png"
+    },
+    {
+      "id": "fire",
+      "name": "On Fire",
+      "rarity": "epic",
+      "file": "emotes/fire.png"
+    },
+    {
+      "id": "skull",
+      "name": "Wrecked",
+      "rarity": "epic",
+      "file": "emotes/skull.png"
+    },
+    {
+      "id": "trophy",
+      "name": "Champion",
+      "rarity": "mythic",
+      "file": "emotes/trophy.png"
+    },
+    {
+      "id": "crown",
+      "name": "Royalty",
+      "rarity": "mythic",
+      "file": "emotes/crown.png"
+    }
+  ]
+}

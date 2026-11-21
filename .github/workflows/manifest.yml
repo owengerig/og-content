@@ -1,0 +1,26 @@
+# Keeps manifest.json (file hashes + og-content's version) up to date: after every push that changes content,
+# it rebuilds the manifest, bumps the patch version and commits it. Apps only download what changed.
+name: Build manifest
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["manifest.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/build_manifest.py
+      - name: Commit the manifest
+        run: |
+          if git diff --quiet manifest.json; then echo "manifest unchanged"; exit 0; fi
+          git config user.name "og-content-bot"
+          git config user.email "og-content-bot@users.noreply.github.com"
+          git commit -m "Update manifest to $(python3 -c "import json;print(json.load(open('manifest.json'))['version'])")" manifest.json
+          git push

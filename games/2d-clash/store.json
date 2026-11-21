@@ -1,0 +1,4 @@
+{
+  "_comment": "2D Clash's own store items (armor, weapons, relics). Today the game rolls its stock at random, so nothing is listed yet; items listed here (by the game's item id) get this rarity, price or hidden flag. Unified item sets are the next step.",
+  "items": []
+}

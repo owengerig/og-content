@@ -1,0 +1,6 @@
+{
+  "_comment": "Card Combat's own store items: card packs and single cards. Rarity sets the price; 'price' overrides it; 'hidden' removes it.",
+  "items": [
+    { "id": "pack_zero", "rarity": "common" }
+  ]
+}

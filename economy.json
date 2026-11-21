@@ -1,0 +1,12 @@
+{
+  "goldPerMinute": 100,
+  "maxCreditedMinutes": 15,
+  "idleSeconds": 30,
+  "winMultiplier": 1,
+  "lossMultiplier": 0.5,
+  "onlineMultiplier": 2,
+  "priceCommon": 2000,
+  "priceRare": 4000,
+  "priceEpic": 8000,
+  "priceMythic": 16000
+}
