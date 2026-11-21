@@ -16,6 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Check the color themes (contrast, look-alikes, color blindness)
+        run: python3 tools/themes.py check
       - run: python3 tools/build_manifest.py
       - name: Commit the manifest
         run: |

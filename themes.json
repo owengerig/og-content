@@ -1,0 +1,320 @@
+{
+  "_comment": "Monthly color themes for every OG Software app. Each month: four colors, each with a role (see tools/themes.py). Colors are #RRGGBB hex. Edit names/hex freely, then run: python3 tools/themes.py assign (picks roles and checks contrast). Apps pick the month from the device date and fall back to 'default' if a theme fails the checks.",
+  "default": {
+    "label": "Default",
+    "primary": {
+      "id": "candy-purple",
+      "name": "Candy Purple",
+      "hex": "#9B3FD8"
+    },
+    "secondary": {
+      "id": "candy-blue",
+      "name": "Candy Blue",
+      "hex": "#2F9CE8"
+    },
+    "frame": {
+      "id": "lavender-gray",
+      "name": "Lavender Gray",
+      "hex": "#8F86C9"
+    },
+    "ambient": {
+      "id": "sunset-glow",
+      "name": "Sunset Glow",
+      "hex": "#FF8C59"
+    }
+  },
+  "months": [
+    {
+      "month": "01",
+      "label": "January",
+      "primary": {
+        "id": "cool-silver",
+        "name": "Cool Silver",
+        "hex": "#C0C7CF"
+      },
+      "secondary": {
+        "id": "glacier-teal",
+        "name": "Glacier Teal",
+        "hex": "#3A98B5",
+        "adjustedFrom": "#3FA7A3"
+      },
+      "frame": {
+        "id": "ice-blue",
+        "name": "Ice Blue",
+        "hex": "#A5D8F3"
+      },
+      "ambient": {
+        "id": "midnight-navy",
+        "name": "Midnight Navy",
+        "hex": "#1B2A4A"
+      }
+    },
+    {
+      "month": "02",
+      "label": "February",
+      "primary": {
+        "id": "bubblegum-pink",
+        "name": "Bubblegum Pink",
+        "hex": "#FF7EB6"
+      },
+      "secondary": {
+        "id": "deep-plum",
+        "name": "Deep Plum",
+        "hex": "#7A3B7E",
+        "adjustedFrom": "#5B2A5E"
+      },
+      "frame": {
+        "id": "slate-gray",
+        "name": "Slate Gray",
+        "hex": "#5A6B80",
+        "adjustedFrom": "#6B7B8C"
+      },
+      "ambient": {
+        "id": "true-crimson",
+        "name": "True Crimson",
+        "hex": "#B3122E"
+      }
+    },
+    {
+      "month": "03",
+      "label": "March",
+      "primary": {
+        "id": "pale-mint",
+        "name": "Pale Mint",
+        "hex": "#BDF0D5"
+      },
+      "secondary": {
+        "id": "lemon-yellow",
+        "name": "Lemon Yellow",
+        "hex": "#F7E35B"
+      },
+      "frame": {
+        "id": "emerald-green",
+        "name": "Emerald Green",
+        "hex": "#2E9E5B"
+      },
+      "ambient": {
+        "id": "cerulean-blue",
+        "name": "Cerulean Blue",
+        "hex": "#2A7DE1"
+      }
+    },
+    {
+      "month": "04",
+      "label": "April",
+      "primary": {
+        "id": "soft-lilac",
+        "name": "Soft Lilac",
+        "hex": "#C8A8E9"
+      },
+      "secondary": {
+        "id": "robins-egg-blue",
+        "name": "Robin's Egg Blue",
+        "hex": "#2391B5",
+        "adjustedFrom": "#1FC7C7"
+      },
+      "frame": {
+        "id": "daffodil-yellow",
+        "name": "Daffodil Yellow",
+        "hex": "#FFD93B"
+      },
+      "ambient": {
+        "id": "kelly-green",
+        "name": "Kelly Green",
+        "hex": "#4CBB17"
+      }
+    },
+    {
+      "month": "05",
+      "label": "May",
+      "primary": {
+        "id": "periwinkle",
+        "name": "Periwinkle",
+        "hex": "#8F99FB"
+      },
+      "secondary": {
+        "id": "peach-cream",
+        "name": "Peach Cream",
+        "hex": "#FFD8B1"
+      },
+      "frame": {
+        "id": "lime-green",
+        "name": "Lime Green",
+        "hex": "#8BD346"
+      },
+      "ambient": {
+        "id": "bright-coral",
+        "name": "Bright Coral",
+        "hex": "#FF6F61"
+      }
+    },
+    {
+      "month": "06",
+      "label": "June",
+      "primary": {
+        "id": "electric-turquoise",
+        "name": "Electric Turquoise",
+        "hex": "#00E5D4"
+      },
+      "secondary": {
+        "id": "magenta",
+        "name": "Magenta",
+        "hex": "#D81B9A"
+      },
+      "frame": {
+        "id": "sunflower-yellow",
+        "name": "Sunflower Yellow",
+        "hex": "#FFC512"
+      },
+      "ambient": {
+        "id": "olive-drab",
+        "name": "Olive Drab",
+        "hex": "#6B8E23"
+      }
+    },
+    {
+      "month": "07",
+      "label": "July",
+      "primary": {
+        "id": "royal-blue",
+        "name": "Royal Blue",
+        "hex": "#2A4CC9"
+      },
+      "secondary": {
+        "id": "pure-white",
+        "name": "Pure White",
+        "hex": "#FFFFFF"
+      },
+      "frame": {
+        "id": "marigold-orange",
+        "name": "Marigold Orange",
+        "hex": "#F5A300"
+      },
+      "ambient": {
+        "id": "scarlet-red",
+        "name": "Scarlet Red",
+        "hex": "#E8202B"
+      }
+    },
+    {
+      "month": "08",
+      "label": "August",
+      "primary": {
+        "id": "hot-pink",
+        "name": "Hot Pink",
+        "hex": "#FF4FA3"
+      },
+      "secondary": {
+        "id": "deep-teal",
+        "name": "Deep Teal",
+        "hex": "#0F5257"
+      },
+      "frame": {
+        "id": "mustard-yellow",
+        "name": "Mustard Yellow",
+        "hex": "#E1AD01"
+      },
+      "ambient": {
+        "id": "terracotta",
+        "name": "Terracotta",
+        "hex": "#C8643B"
+      }
+    },
+    {
+      "month": "09",
+      "label": "September",
+      "primary": {
+        "id": "maroon",
+        "name": "Maroon",
+        "hex": "#7A1F2B"
+      },
+      "secondary": {
+        "id": "sage-green",
+        "name": "Sage Green",
+        "hex": "#9CAF88"
+      },
+      "frame": {
+        "id": "ochre",
+        "name": "Ochre",
+        "hex": "#CC8A1E"
+      },
+      "ambient": {
+        "id": "burnt-sienna",
+        "name": "Burnt Sienna",
+        "hex": "#B9552F"
+      }
+    },
+    {
+      "month": "10",
+      "label": "October",
+      "primary": {
+        "id": "pumpkin-orange",
+        "name": "Pumpkin Orange",
+        "hex": "#F57C14"
+      },
+      "secondary": {
+        "id": "royal-purple",
+        "name": "Royal Purple",
+        "hex": "#6E3AA8"
+      },
+      "frame": {
+        "id": "copper",
+        "name": "Copper",
+        "hex": "#B8733A"
+      },
+      "ambient": {
+        "id": "jet-black",
+        "name": "Jet Black",
+        "hex": "#1A1A1D"
+      }
+    },
+    {
+      "month": "11",
+      "label": "November",
+      "primary": {
+        "id": "chocolate-brown",
+        "name": "Chocolate Brown",
+        "hex": "#5C3A21"
+      },
+      "secondary": {
+        "id": "warm-sand",
+        "name": "Warm Sand",
+        "hex": "#D9C2A0"
+      },
+      "frame": {
+        "id": "goldenrod",
+        "name": "Goldenrod",
+        "hex": "#DAA520"
+      },
+      "ambient": {
+        "id": "burgundy",
+        "name": "Burgundy",
+        "hex": "#800C2A"
+      }
+    },
+    {
+      "month": "12",
+      "label": "December",
+      "primary": {
+        "id": "cranberry-red",
+        "name": "Cranberry Red",
+        "hex": "#A3123A"
+      },
+      "secondary": {
+        "id": "cobalt-blue",
+        "name": "Cobalt Blue",
+        "hex": "#1F4FBF"
+      },
+      "frame": {
+        "id": "metallic-gold",
+        "name": "Metallic Gold",
+        "hex": "#D4AF37"
+      },
+      "ambient": {
+        "id": "pine-green",
+        "name": "Pine Green",
+        "hex": "#1F5D3B"
+      }
+    }
+  ]
+}
