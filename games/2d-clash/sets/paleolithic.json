@@ -1,0 +1,379 @@
+{
+  "id": "paleolithic",
+  "name": "Paleolithic",
+  "order": 1,
+  "minLevel": 1,
+  "description": "The Old Stone Age: knapped flint and stone weapons, hide and woven-grass clothing, and the first carvings and music.",
+  "items": [
+    {
+      "id": "pal-flint-knife",
+      "name": "Flint Knife",
+      "category": "weapon",
+      "base": "FlintKnife",
+      "rarity": "common",
+      "color": "#7A6F63",
+      "accent": "#5A4632",
+      "flavor": "A sharp flake of flint, knapped by hand.",
+      "stats": {
+        "strength": 1,
+        "agility": 4,
+        "crit": 4.5
+      }
+    },
+    {
+      "id": "pal-stone-club",
+      "name": "Stone Club",
+      "category": "weapon",
+      "base": "StoneClub",
+      "rarity": "common",
+      "color": "#8E8A82",
+      "accent": "#7B5534",
+      "flavor": "A branch with a stone lashed to the end.",
+      "stats": {
+        "health": 5,
+        "strength": 7,
+        "defense": 1
+      }
+    },
+    {
+      "id": "pal-hand-axe",
+      "name": "Hand Axe",
+      "category": "weapon",
+      "base": "StoneAxe",
+      "rarity": "common",
+      "color": "#9A958C",
+      "accent": "#6E4B2E",
+      "flavor": "The oldest tool there is.",
+      "stats": {
+        "strength": 6,
+        "defense": 1,
+        "crit": 0.5
+      }
+    },
+    {
+      "id": "pal-flint-spear",
+      "name": "Flint Spear",
+      "category": "weapon",
+      "base": "FlintSpear",
+      "rarity": "rare",
+      "color": "#5E5A55",
+      "accent": "#8A6A45",
+      "flavor": "Long enough to keep a mammoth at a distance.",
+      "stats": {
+        "strength": 6,
+        "agility": 2,
+        "crit": 3.0
+      }
+    },
+    {
+      "id": "pal-mammoth-club",
+      "name": "Mammoth Bone Club",
+      "category": "weapon",
+      "base": "StoneClub",
+      "rarity": "rare",
+      "color": "#E6DCC3",
+      "accent": "#C9BC9C",
+      "flavor": "Heavy, and it used to be a mammoth.",
+      "stats": {
+        "health": 8,
+        "strength": 10,
+        "defense": 2
+      }
+    },
+    {
+      "id": "pal-obsidian-spear",
+      "name": "Obsidian Spear",
+      "category": "weapon",
+      "base": "FlintSpear",
+      "rarity": "epic",
+      "color": "#2B2735",
+      "accent": "#6B4E31",
+      "element": "poison",
+      "elementLevel": 2,
+      "flavor": "Volcanic glass, sharper than any blade.",
+      "stats": {
+        "strength": 10,
+        "agility": 3,
+        "crit": 5.0
+      }
+    },
+    {
+      "id": "pal-fang-knife",
+      "name": "Cave Bear Fang",
+      "category": "weapon",
+      "base": "FlintKnife",
+      "rarity": "epic",
+      "color": "#EFE6CF",
+      "accent": "#4A3728",
+      "element": "ice",
+      "elementLevel": 1,
+      "flavor": "Taken from the biggest bear in the valley.",
+      "stats": {
+        "strength": 3,
+        "agility": 9,
+        "crit": 10.5
+      }
+    },
+    {
+      "id": "pal-firestarter-axe",
+      "name": "Firestarter Axe",
+      "category": "weapon",
+      "base": "StoneAxe",
+      "rarity": "mythic",
+      "color": "#C8452A",
+      "accent": "#3A2418",
+      "element": "fire",
+      "elementLevel": 4,
+      "flavor": "Struck once, it never stopped smouldering.",
+      "stats": {
+        "strength": 28,
+        "defense": 3,
+        "crit": 3.0
+      }
+    },
+    {
+      "id": "pal-hide-wrap",
+      "name": "Hide Wrap",
+      "category": "armor",
+      "base": "ChestArmor",
+      "rarity": "common",
+      "color": "#A07A4F",
+      "material": "hide",
+      "flavor": "Deer hide, tied at the shoulder.",
+      "stats": {
+        "health": 15,
+        "agility": 1,
+        "defense": 4
+      }
+    },
+    {
+      "id": "pal-grass-tunic",
+      "name": "Woven Grass Tunic",
+      "category": "armor",
+      "base": "ChestArmor",
+      "rarity": "common",
+      "color": "#A9A15C",
+      "material": "cloth",
+      "flavor": "Light, cool and a little itchy.",
+      "stats": {
+        "health": 12,
+        "agility": 2,
+        "defense": 3,
+        "crit": 0.5
+      }
+    },
+    {
+      "id": "pal-fur-cloak",
+      "name": "Fur Cloak",
+      "category": "armor",
+      "base": "ChestArmor",
+      "rarity": "rare",
+      "color": "#6E5038",
+      "material": "fur",
+      "flavor": "Warm through the longest winter.",
+      "stats": {
+        "health": 31,
+        "defense": 5
+      }
+    },
+    {
+      "id": "pal-mammoth-mantle",
+      "name": "Mammoth Fur Mantle",
+      "category": "armor",
+      "base": "ChestArmor",
+      "rarity": "epic",
+      "color": "#8A6A4A",
+      "material": "fur",
+      "element": "ice",
+      "elementLevel": 2,
+      "flavor": "Thick shaggy fur that shrugs off the cold.",
+      "stats": {
+        "health": 46,
+        "agility": 1,
+        "defense": 7
+      }
+    },
+    {
+      "id": "pal-leather-headband",
+      "name": "Leather Headband",
+      "category": "armor",
+      "base": "Hachigane",
+      "rarity": "common",
+      "color": "#8A6240",
+      "material": "hide",
+      "flavor": "Keeps the hair out of your eyes.",
+      "stats": {
+        "health": 8,
+        "agility": 3,
+        "defense": 2
+      }
+    },
+    {
+      "id": "pal-fur-hood",
+      "name": "Fur Hood",
+      "category": "armor",
+      "base": "Coif",
+      "rarity": "rare",
+      "color": "#5C4632",
+      "material": "fur",
+      "flavor": "A hunter's hood of fox fur.",
+      "stats": {
+        "health": 17,
+        "agility": 4,
+        "defense": 3
+      }
+    },
+    {
+      "id": "pal-wolf-cap",
+      "name": "Wolf Pelt Cap",
+      "category": "armor",
+      "base": "Pilos",
+      "rarity": "epic",
+      "color": "#7D7468",
+      "material": "fur",
+      "element": "poison",
+      "elementLevel": 1,
+      "flavor": "The pack leader's pelt.",
+      "stats": {
+        "health": 26,
+        "agility": 6,
+        "defense": 4
+      }
+    },
+    {
+      "id": "pal-sabretooth-pelt",
+      "name": "Sabre-Tooth Pelt",
+      "category": "armor",
+      "base": "Coif",
+      "rarity": "mythic",
+      "color": "#C9A267",
+      "material": "fur",
+      "element": "ice",
+      "elementLevel": 4,
+      "flavor": "Wear the hunter of hunters.",
+      "stats": {
+        "health": 52,
+        "agility": 12,
+        "defense": 9
+      }
+    },
+    {
+      "id": "pal-shell-circlet",
+      "name": "Shell Bead Circlet",
+      "category": "relic",
+      "base": "Circlet",
+      "rarity": "common",
+      "color": "#EDE4D3",
+      "flavor": "Pierced shells on a sinew cord.",
+      "stats": {
+        "health": 12,
+        "agility": 4,
+        "crit": 2.5
+      }
+    },
+    {
+      "id": "pal-antler-crown",
+      "name": "Antler Crown",
+      "category": "relic",
+      "base": "SpikedCrown",
+      "rarity": "rare",
+      "color": "#D8C7A0",
+      "flavor": "Worn by the one who leads the hunt.",
+      "stats": {
+        "strength": 7,
+        "crit": 5.5
+      }
+    },
+    {
+      "id": "pal-feather-circlet",
+      "name": "Feather Circlet",
+      "category": "relic",
+      "base": "Circlet",
+      "rarity": "epic",
+      "color": "#3E7CB1",
+      "element": "ice",
+      "elementLevel": 2,
+      "flavor": "Blue feathers from a bird no one has seen since.",
+      "stats": {
+        "health": 26,
+        "agility": 8,
+        "crit": 5.5
+      }
+    },
+    {
+      "id": "pal-ochre-stone",
+      "name": "Ochre Handprint Stone",
+      "category": "relic",
+      "base": "CaveTablet",
+      "rarity": "common",
+      "color": "#B5523B",
+      "flavor": "Someone was here, long ago.",
+      "stats": {
+        "strength": 4,
+        "defense": 1,
+        "crit": 2.5
+      }
+    },
+    {
+      "id": "pal-bone-flute",
+      "name": "Bone Flute",
+      "category": "relic",
+      "base": "BoneFlute",
+      "rarity": "common",
+      "color": "#E8DDC5",
+      "flavor": "The first music.",
+      "stats": {
+        "agility": 5,
+        "crit": 2.5
+      }
+    },
+    {
+      "id": "pal-ivory-mammoth",
+      "name": "Carved Ivory Mammoth",
+      "category": "relic",
+      "base": "Figurine",
+      "rarity": "rare",
+      "color": "#F1E9D2",
+      "flavor": "Small enough to hold in one hand.",
+      "stats": {
+        "health": 22,
+        "defense": 4,
+        "crit": 2.0
+      }
+    },
+    {
+      "id": "pal-venus",
+      "name": "Venus Figurine",
+      "category": "relic",
+      "base": "Figurine",
+      "rarity": "epic",
+      "color": "#C08A55",
+      "element": "fire",
+      "elementLevel": 1,
+      "flavor": "Carved from limestone and rubbed with red ochre.",
+      "stats": {
+        "health": 32,
+        "defense": 5,
+        "crit": 2.5
+      }
+    },
+    {
+      "id": "pal-spirit-totem",
+      "name": "Spirit Totem",
+      "category": "relic",
+      "base": "Totem",
+      "rarity": "mythic",
+      "color": "#7A4A9A",
+      "element": "poison",
+      "elementLevel": 4,
+      "flavor": "The ancestors are watching.",
+      "stats": {
+        "health": 54,
+        "strength": 11,
+        "agility": 5,
+        "defense": 5,
+        "crit": 11.0
+      }
+    }
+  ]
+}

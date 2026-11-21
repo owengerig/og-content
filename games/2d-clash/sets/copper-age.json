@@ -1,0 +1,387 @@
+{
+  "id": "copper-age",
+  "name": "Copper Age",
+  "order": 2,
+  "minLevel": 11,
+  "description": "The first metal: cast copper weapons, linen and dyed wool clothing, and the earliest gold and copper treasures.",
+  "items": [
+    {
+      "id": "cop-copper-dagger",
+      "name": "Copper Dagger",
+      "category": "weapon",
+      "base": "CopperDagger",
+      "rarity": "common",
+      "color": "#C87533",
+      "accent": "#5A3A22",
+      "flavor": "Freshly cast and polished.",
+      "stats": {
+        "strength": 2,
+        "agility": 5,
+        "crit": 5.5
+      }
+    },
+    {
+      "id": "cop-copper-axe",
+      "name": "Copper Axe",
+      "category": "weapon",
+      "base": "CopperAxe",
+      "rarity": "common",
+      "color": "#C87533",
+      "accent": "#7B5534",
+      "flavor": "Metal at last.",
+      "stats": {
+        "strength": 8,
+        "defense": 1,
+        "crit": 1.5
+      }
+    },
+    {
+      "id": "cop-copper-mace",
+      "name": "Copper Mace",
+      "category": "weapon",
+      "base": "CopperMace",
+      "rarity": "common",
+      "color": "#B8692E",
+      "accent": "#6E4B2E",
+      "flavor": "A copper head on an ash handle.",
+      "stats": {
+        "strength": 9,
+        "defense": 2
+      }
+    },
+    {
+      "id": "cop-arsenic-halberd",
+      "name": "Arsenical Halberd",
+      "category": "weapon",
+      "base": "CopperHalberd",
+      "rarity": "rare",
+      "color": "#D9A066",
+      "accent": "#5C3B22",
+      "flavor": "Copper with a dash of arsenic: harder, and silvery.",
+      "stats": {
+        "strength": 15,
+        "crit": 3.0
+      }
+    },
+    {
+      "id": "cop-verdigris-spear",
+      "name": "Verdigris Spear",
+      "category": "weapon",
+      "base": "CopperSpear",
+      "rarity": "rare",
+      "color": "#5FA38A",
+      "accent": "#7B5534",
+      "flavor": "Green with age, still sharp.",
+      "stats": {
+        "strength": 8,
+        "agility": 4,
+        "crit": 5.0
+      }
+    },
+    {
+      "id": "cop-iceman-axe",
+      "name": "Iceman's Axe",
+      "category": "weapon",
+      "base": "CopperAxe",
+      "rarity": "epic",
+      "color": "#E08A3C",
+      "accent": "#5A3A22",
+      "element": "ice",
+      "elementLevel": 2,
+      "flavor": "Found in the ice 5,000 years later.",
+      "stats": {
+        "strength": 18,
+        "defense": 2,
+        "crit": 3.0
+      }
+    },
+    {
+      "id": "cop-mishmar-mace",
+      "name": "Nahal Mishmar Mace",
+      "category": "weapon",
+      "base": "CopperMace",
+      "rarity": "epic",
+      "color": "#9C5A2C",
+      "accent": "#3A2418",
+      "element": "fire",
+      "elementLevel": 2,
+      "flavor": "From a hoard hidden in a desert cave.",
+      "stats": {
+        "strength": 21,
+        "defense": 4
+      }
+    },
+    {
+      "id": "cop-sun-halberd",
+      "name": "Sun Disc Halberd",
+      "category": "weapon",
+      "base": "CopperHalberd",
+      "rarity": "mythic",
+      "color": "#F2B33D",
+      "accent": "#4A2E18",
+      "element": "fire",
+      "elementLevel": 4,
+      "flavor": "It catches the sunrise and throws it back.",
+      "stats": {
+        "strength": 45,
+        "crit": 8.5
+      }
+    },
+    {
+      "id": "cop-linen-tunic",
+      "name": "Linen Tunic",
+      "category": "armor",
+      "base": "ChestArmor",
+      "rarity": "common",
+      "color": "#E8E0CC",
+      "material": "cloth",
+      "flavor": "Spun from flax, bleached in the sun.",
+      "stats": {
+        "health": 16,
+        "agility": 2,
+        "defense": 3,
+        "crit": 0.5
+      }
+    },
+    {
+      "id": "cop-wool-tunic",
+      "name": "Dyed Wool Tunic",
+      "category": "armor",
+      "base": "ChestArmor",
+      "rarity": "rare",
+      "color": "#8E2F2A",
+      "material": "cloth",
+      "flavor": "Madder red: the colour of rank.",
+      "stats": {
+        "health": 24,
+        "agility": 3,
+        "defense": 5,
+        "crit": 1.0
+      }
+    },
+    {
+      "id": "cop-grass-cape",
+      "name": "Iceman's Grass Cape",
+      "category": "armor",
+      "base": "ChestArmor",
+      "rarity": "epic",
+      "color": "#9C8F4E",
+      "material": "cloth",
+      "element": "ice",
+      "elementLevel": 2,
+      "flavor": "Woven grass over a goat-hide coat.",
+      "stats": {
+        "health": 35,
+        "agility": 5,
+        "defense": 7,
+        "crit": 1.5
+      }
+    },
+    {
+      "id": "cop-chieftain-mantle",
+      "name": "Chieftain's Mantle",
+      "category": "armor",
+      "base": "ChestArmor",
+      "rarity": "mythic",
+      "color": "#5B2E7A",
+      "material": "cloth",
+      "element": "poison",
+      "elementLevel": 4,
+      "flavor": "Dyed with a purple worth more than copper.",
+      "stats": {
+        "health": 72,
+        "agility": 10,
+        "defense": 15,
+        "crit": 3.5
+      }
+    },
+    {
+      "id": "cop-wool-cap",
+      "name": "Wool Cap",
+      "category": "armor",
+      "base": "Pilos",
+      "rarity": "common",
+      "color": "#6B3B2A",
+      "material": "cloth",
+      "flavor": "Felted wool, snug and warm.",
+      "stats": {
+        "health": 9,
+        "agility": 5,
+        "defense": 2,
+        "crit": 0.5
+      }
+    },
+    {
+      "id": "cop-linen-wrap",
+      "name": "Linen Headwrap",
+      "category": "armor",
+      "base": "TurbanHelmet",
+      "rarity": "common",
+      "color": "#DCCFB4",
+      "material": "cloth",
+      "flavor": "Shade from the midday sun.",
+      "stats": {
+        "health": 9,
+        "agility": 5,
+        "defense": 2,
+        "crit": 0.5
+      }
+    },
+    {
+      "id": "cop-bearskin-cap",
+      "name": "Bearskin Cap",
+      "category": "armor",
+      "base": "Coif",
+      "rarity": "rare",
+      "color": "#3F2E22",
+      "material": "fur",
+      "flavor": "The Iceman wore one just like it.",
+      "stats": {
+        "health": 23,
+        "agility": 5,
+        "defense": 4
+      }
+    },
+    {
+      "id": "cop-phrygian-cap",
+      "name": "Red Wool Cap",
+      "category": "armor",
+      "base": "PhrygianHelmet",
+      "rarity": "epic",
+      "color": "#A23A2C",
+      "material": "cloth",
+      "element": "fire",
+      "elementLevel": 1,
+      "flavor": "A tall cap with a forward-falling peak.",
+      "stats": {
+        "health": 20,
+        "agility": 11,
+        "defense": 4,
+        "crit": 1.5
+      }
+    },
+    {
+      "id": "cop-copper-circlet",
+      "name": "Copper Circlet",
+      "category": "relic",
+      "base": "Circlet",
+      "rarity": "common",
+      "color": "#C87533",
+      "flavor": "A thin band of hammered copper.",
+      "stats": {
+        "health": 16,
+        "agility": 5,
+        "crit": 3.0
+      }
+    },
+    {
+      "id": "cop-mishmar-crown",
+      "name": "Nahal Mishmar Crown",
+      "category": "relic",
+      "base": "RoyalCrown",
+      "rarity": "rare",
+      "color": "#B5652B",
+      "flavor": "Cast in a mould of wax, 6,000 years ago.",
+      "stats": {
+        "health": 33,
+        "strength": 5,
+        "defense": 2,
+        "crit": 4.5
+      }
+    },
+    {
+      "id": "cop-varna-diadem",
+      "name": "Varna Gold Diadem",
+      "category": "relic",
+      "base": "RoyalCrown",
+      "rarity": "mythic",
+      "color": "#F2C230",
+      "element": "fire",
+      "elementLevel": 4,
+      "flavor": "The oldest worked gold in the world.",
+      "stats": {
+        "health": 98,
+        "strength": 14,
+        "defense": 7,
+        "crit": 14.0
+      }
+    },
+    {
+      "id": "cop-copper-ingot",
+      "name": "Copper Ingot",
+      "category": "relic",
+      "base": "CopperIngot",
+      "rarity": "common",
+      "color": "#C87533",
+      "flavor": "Wealth you can carry.",
+      "stats": {
+        "strength": 6,
+        "defense": 2,
+        "crit": 1.5
+      }
+    },
+    {
+      "id": "cop-clay-idol",
+      "name": "Clay Idol",
+      "category": "relic",
+      "base": "Idol",
+      "rarity": "common",
+      "color": "#B7745A",
+      "flavor": "Pressed by hand and baked in the hearth.",
+      "stats": {
+        "health": 25,
+        "defense": 5
+      }
+    },
+    {
+      "id": "cop-spiral-amulet",
+      "name": "Spiral Amulet",
+      "category": "relic",
+      "base": "Amulet",
+      "rarity": "rare",
+      "color": "#D08040",
+      "flavor": "Copper wire coiled into a double spiral.",
+      "stats": {
+        "health": 19,
+        "strength": 2,
+        "agility": 2,
+        "defense": 2,
+        "crit": 4.5
+      }
+    },
+    {
+      "id": "cop-varna-pendant",
+      "name": "Varna Gold Pendant",
+      "category": "relic",
+      "base": "Amulet",
+      "rarity": "epic",
+      "color": "#E8B830",
+      "element": "ice",
+      "elementLevel": 1,
+      "flavor": "Buried with a chieftain beside the Black Sea.",
+      "stats": {
+        "health": 27,
+        "strength": 3,
+        "agility": 3,
+        "defense": 3,
+        "crit": 7.0
+      }
+    },
+    {
+      "id": "cop-cucuteni-figurine",
+      "name": "Cucuteni Figurine",
+      "category": "relic",
+      "base": "Figurine",
+      "rarity": "epic",
+      "color": "#C9734A",
+      "element": "poison",
+      "elementLevel": 2,
+      "flavor": "Painted with spirals of red and white.",
+      "stats": {
+        "health": 41,
+        "defense": 7,
+        "crit": 3.5
+      }
+    }
+  ]
+}

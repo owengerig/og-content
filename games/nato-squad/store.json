@@ -1,9 +1,4 @@
 {
-  "_comment": "NATO Squad's own store items: planes and add-ons. Rarity sets the price (common 2,000 / rare 4,000 / epic 8,000 / mythic 16,000); 'price' overrides it; 'hidden' removes the item from the store.",
-  "items": [
-    { "id": "jet-1", "rarity": "rare" },
-    { "id": "jet-2", "rarity": "epic" },
-    { "id": "crate-standard", "rarity": "common" },
-    { "id": "crate-elite", "rarity": "rare" }
-  ]
+  "_comment": "NATO Squad sells every plane and add-on of the sets the player has reached (games/nato-squad/sets/), priced by rarity. List an item id here to override its price ('price') or take it out of the store ('hidden'); it can still drop as loot.",
+  "items": []
 }

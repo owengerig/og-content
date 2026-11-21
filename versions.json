@@ -1,10 +1,10 @@
 {
-  "shared": "1.1.0",
+  "shared": "1.1.1",
   "games": {
-    "2d-clash": "1.0.0",
+    "2d-clash": "1.0.2",
     "borderline": "1.0.0",
     "card-combat": "1.0.0",
-    "nato-squad": "1.0.0",
+    "nato-squad": "1.0.2",
     "pintally": "1.0.0",
     "storyhub": "1.0.0"
   }

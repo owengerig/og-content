@@ -1,0 +1,547 @@
+{
+ "id": "world-war-2",
+ "name": "World War II",
+ "order": 1,
+ "minMission": 0,
+ "description": "The first jet fighters (Me 262, Gloster Meteor, He 162) with cannon upgrades, bombs and the first missiles.",
+ "models": {
+  "me262": {
+   "w": 128,
+   "h": 48,
+   "ops": [
+    [
+     "poly",
+     "lo",
+     "0.020,0.706 0.170,0.722 0.150,0.768 0.030,0.768"
+    ],
+    [
+     "ellipse",
+     "mid",
+     0.56,
+     0.287,
+     0.15,
+     0.171
+    ],
+    [
+     "ellipse",
+     "dark",
+     0.705,
+     0.287,
+     0.02,
+     0.116
+    ],
+    [
+     "poly",
+     "dark",
+     "0.400,0.241 0.430,0.194 0.430,0.380 0.400,0.334"
+    ],
+    [
+     "poly",
+     "hi",
+     "0.000,0.536 0.060,0.458 0.320,0.411 0.620,0.411 0.840,0.442 0.970,0.504 1.000,0.536 0.960,0.582 0.800,0.644 0.600,0.675 0.360,0.659 0.120,0.628 0.000,0.597"
+    ],
+    [
+     "poly",
+     "lo",
+     "0.420,0.442 0.640,0.442 0.620,0.396 0.440,0.396"
+    ],
+    [
+     "poly",
+     "body",
+     "0.030,0.597 0.170,0.628 0.130,0.860 0.080,0.900 0.040,0.860"
+    ],
+    [
+     "poly",
+     "body",
+     "0.030,0.675 0.200,0.691 0.180,0.737 0.040,0.737"
+    ],
+    [
+     "ellipse",
+     "glass",
+     0.6,
+     0.675,
+     0.08,
+     0.109
+    ],
+    [
+     "rect",
+     "dark",
+     0.595,
+     0.644,
+     0.607,
+     0.783
+    ],
+    [
+     "rect",
+     "dark",
+     0.95,
+     0.528,
+     1.0,
+     0.559
+    ],
+    [
+     "rect",
+     "accent",
+     0.2,
+     0.489,
+     0.25,
+     0.613
+    ]
+   ]
+  },
+  "meteor": {
+   "w": 128,
+   "h": 48,
+   "ops": [
+    [
+     "poly",
+     "lo",
+     "0.040,0.850 0.180,0.865 0.160,0.910 0.050,0.910"
+    ],
+    [
+     "poly",
+     "hi",
+     "0.000,0.490 0.050,0.430 0.400,0.400 0.800,0.415 0.950,0.475 1.000,0.535 0.950,0.595 0.800,0.640 0.400,0.640 0.080,0.610 0.000,0.580"
+    ],
+    [
+     "rect",
+     "lo",
+     0.36,
+     0.415,
+     0.72,
+     0.475
+    ],
+    [
+     "ellipse",
+     "mid",
+     0.56,
+     0.445,
+     0.2,
+     0.18
+    ],
+    [
+     "ellipse",
+     "dark",
+     0.755,
+     0.445,
+     0.025,
+     0.135
+    ],
+    [
+     "poly",
+     "dark",
+     "0.350,0.370 0.370,0.340 0.370,0.550 0.350,0.520"
+    ],
+    [
+     "poly",
+     "body",
+     "0.020,0.580 0.160,0.610 0.150,0.940 0.110,0.920 0.050,0.920 0.030,0.840"
+    ],
+    [
+     "poly",
+     "body",
+     "0.040,0.820 0.210,0.835 0.190,0.880 0.050,0.880"
+    ],
+    [
+     "ellipse",
+     "glass",
+     0.8,
+     0.655,
+     0.07,
+     0.105
+    ],
+    [
+     "ellipse",
+     "accent",
+     0.28,
+     0.535,
+     0.03,
+     0.105
+    ],
+    [
+     "ellipse",
+     "hi",
+     0.28,
+     0.535,
+     0.012,
+     0.045
+    ]
+   ]
+  },
+  "he162": {
+   "w": 120,
+   "h": 48,
+   "ops": [
+    [
+     "poly",
+     "hi",
+     "0.000,0.462 0.080,0.404 0.400,0.375 0.750,0.404 0.920,0.462 1.000,0.534 0.920,0.607 0.750,0.636 0.500,0.607 0.200,0.564 0.000,0.520"
+    ],
+    [
+     "poly",
+     "mid",
+     "0.360,0.578 0.520,0.578 0.500,0.679 0.380,0.679"
+    ],
+    [
+     "ellipse",
+     "metal",
+     0.42,
+     0.752,
+     0.2,
+     0.131
+    ],
+    [
+     "ellipse",
+     "dark",
+     0.615,
+     0.752,
+     0.02,
+     0.102
+    ],
+    [
+     "poly",
+     "dark",
+     "0.200,0.694 0.230,0.665 0.230,0.839 0.200,0.810"
+    ],
+    [
+     "poly",
+     "body",
+     "0.000,0.506 0.160,0.520 0.140,0.564 0.010,0.564"
+    ],
+    [
+     "poly",
+     "body",
+     "0.020,0.346 0.100,0.346 0.090,0.781 0.040,0.781"
+    ],
+    [
+     "poly",
+     "lo",
+     "0.480,0.621 0.680,0.621 0.660,0.578 0.500,0.578"
+    ],
+    [
+     "ellipse",
+     "glass",
+     0.74,
+     0.65,
+     0.07,
+     0.087
+    ],
+    [
+     "rect",
+     "accent",
+     0.84,
+     0.455,
+     0.89,
+     0.6
+    ]
+   ]
+  }
+ },
+ "items": [
+  {
+   "id": "ww2-me262-a1a",
+   "name": "Me 262 A-1a Schwalbe",
+   "category": "plane",
+   "model": "me262",
+   "rarity": "common",
+   "role": "Jet Fighter",
+   "gun": "spread",
+   "stats": {
+    "damage": 10.8,
+    "fireInterval": 0.18,
+    "hull": 86,
+    "speed": 7.4,
+    "regen": 5.0
+   },
+   "colors": {
+    "body": "#7F8A78",
+    "accent": "#E3C23A"
+   },
+   "desc": "The first operational jet fighter. Four 30 mm cannons fan out as gun power rises."
+  },
+  {
+   "id": "ww2-me262-a2a",
+   "name": "Me 262 A-2a Sturmvogel",
+   "category": "plane",
+   "model": "me262",
+   "rarity": "rare",
+   "role": "Fighter-Bomber",
+   "gun": "forwardAndDown",
+   "stats": {
+    "damage": 12.4,
+    "fireInterval": 0.171,
+    "hull": 98,
+    "speed": 7.6,
+    "regen": 5.8
+   },
+   "colors": {
+    "body": "#8C8E6E",
+    "accent": "#D9572B"
+   },
+   "desc": "The bomber version: fires forward and down at ground targets."
+  },
+  {
+   "id": "ww2-me262-b1a",
+   "name": "Me 262 B-1a/U1 Nachtjäger",
+   "category": "plane",
+   "model": "me262",
+   "rarity": "epic",
+   "role": "Night Fighter",
+   "gun": "spread",
+   "stats": {
+    "damage": 14.3,
+    "fireInterval": 0.162,
+    "hull": 113,
+    "speed": 7.8,
+    "regen": 6.6
+   },
+   "colors": {
+    "body": "#2E333B",
+    "accent": "#C93A3A"
+   },
+   "desc": "Radar-equipped two-seat night fighter in black."
+  },
+  {
+   "id": "ww2-me262-u4",
+   "name": "Me 262 A-1a/U4 Pulkzerstörer",
+   "category": "plane",
+   "model": "me262",
+   "rarity": "mythic",
+   "role": "Bomber Destroyer",
+   "gun": "stream",
+   "stats": {
+    "damage": 40.0,
+    "fireInterval": 0.34,
+    "hull": 133,
+    "speed": 8.0,
+    "regen": 7.8
+   },
+   "colors": {
+    "body": "#5E6B57",
+    "accent": "#F2C230"
+   },
+   "desc": "Carries a 50 mm anti-tank cannon in its nose. Slow to fire, devastating when it hits."
+  },
+  {
+   "id": "ww2-meteor-f1",
+   "name": "Gloster Meteor F.1",
+   "category": "plane",
+   "model": "meteor",
+   "rarity": "common",
+   "role": "Jet Fighter",
+   "gun": "stream",
+   "stats": {
+    "damage": 7.2,
+    "fireInterval": 0.11,
+    "hull": 81,
+    "speed": 7.2,
+    "regen": 6.0
+   },
+   "colors": {
+    "body": "#6E7A4E",
+    "accent": "#3A6FD0"
+   },
+   "desc": "The Allies' first jet. A tight stream from four 20 mm cannons."
+  },
+  {
+   "id": "ww2-meteor-f3",
+   "name": "Gloster Meteor F.3",
+   "category": "plane",
+   "model": "meteor",
+   "rarity": "rare",
+   "role": "Jet Fighter",
+   "gun": "stream",
+   "stats": {
+    "damage": 8.3,
+    "fireInterval": 0.104,
+    "hull": 93,
+    "speed": 7.4,
+    "regen": 6.9
+   },
+   "colors": {
+    "body": "#8A9098",
+    "accent": "#3A6FD0"
+   },
+   "desc": "More powerful engines and a sliding bubble canopy."
+  },
+  {
+   "id": "ww2-meteor-f8",
+   "name": "Gloster Meteor F.8",
+   "category": "plane",
+   "model": "meteor",
+   "rarity": "epic",
+   "role": "Jet Fighter",
+   "gun": "spread",
+   "stats": {
+    "damage": 9.5,
+    "fireInterval": 0.099,
+    "hull": 107,
+    "speed": 7.6,
+    "regen": 7.9
+   },
+   "colors": {
+    "body": "#B9C0C8",
+    "accent": "#D83A3A"
+   },
+   "desc": "Lengthened, faster and better armed."
+  },
+  {
+   "id": "ww2-he162-a1",
+   "name": "He 162 A-1 Volksjäger",
+   "category": "plane",
+   "model": "he162",
+   "rarity": "common",
+   "role": "Light Jet Fighter",
+   "gun": "stream",
+   "stats": {
+    "damage": 8.1,
+    "fireInterval": 0.13,
+    "hull": 68,
+    "speed": 8.2,
+    "regen": 5.0
+   },
+   "colors": {
+    "body": "#8E9A84",
+    "accent": "#E3C23A"
+   },
+   "desc": "Small, light and very fast, with its engine on its back."
+  },
+  {
+   "id": "ww2-he162-a2",
+   "name": "He 162 A-2 Spatz",
+   "category": "plane",
+   "model": "he162",
+   "rarity": "rare",
+   "role": "Light Jet Fighter",
+   "gun": "spread",
+   "stats": {
+    "damage": 9.3,
+    "fireInterval": 0.123,
+    "hull": 78,
+    "speed": 8.4,
+    "regen": 5.8
+   },
+   "colors": {
+    "body": "#A3A08A",
+    "accent": "#4A9A4A"
+   },
+   "desc": "Twin 20 mm cannons: lighter but faster firing."
+  },
+  {
+   "id": "ww2-ammo-belts",
+   "name": "Extra Ammunition Belts",
+   "category": "addon",
+   "slot": "gun",
+   "kind": "firepower",
+   "rarity": "common",
+   "stats": {
+    "fireRate": 4.0
+   },
+   "color": "#B08A4A",
+   "desc": "Longer belts, faster feed."
+  },
+  {
+   "id": "ww2-mk108",
+   "name": "MK 108 Cannon Upgrade",
+   "category": "addon",
+   "slot": "gun",
+   "kind": "firepower",
+   "rarity": "rare",
+   "stats": {
+    "damage": 9.6,
+    "fireRate": 3.2
+   },
+   "color": "#8A8F96",
+   "desc": "Heavier 30 mm shells."
+  },
+  {
+   "id": "ww2-revi",
+   "name": "Revi Gyro Gunsight",
+   "category": "addon",
+   "slot": "gun",
+   "kind": "firepower",
+   "rarity": "epic",
+   "stats": {
+    "damage": 10.0,
+    "crit": 5.0
+   },
+   "color": "#5F9FCF",
+   "desc": "A computing gunsight: more hits, more critical hits."
+  },
+  {
+   "id": "ww2-sc50",
+   "name": "SC 50 Bomb Rack",
+   "category": "addon",
+   "slot": "payload",
+   "kind": "bombs",
+   "rarity": "common",
+   "weapon": {
+    "damage": 30.0,
+    "count": 2,
+    "interval": 3.5
+   },
+   "color": "#6E6A52",
+   "desc": "Drops two small bombs on ground targets every few seconds."
+  },
+  {
+   "id": "ww2-sc250",
+   "name": "SC 250 Bombs",
+   "category": "addon",
+   "slot": "payload",
+   "kind": "bombs",
+   "rarity": "rare",
+   "weapon": {
+    "damage": 54.4,
+    "count": 2,
+    "interval": 3.5
+   },
+   "color": "#5C5A46",
+   "desc": "Two heavy bombs every few seconds."
+  },
+  {
+   "id": "ww2-fritz-x",
+   "name": "Fritz X Guided Bomb",
+   "category": "addon",
+   "slot": "payload",
+   "kind": "bombs",
+   "rarity": "mythic",
+   "weapon": {
+    "damage": 160.0,
+    "count": 3,
+    "interval": 3.0
+   },
+   "color": "#9A9A9A",
+   "desc": "A radio-guided armour-piercing bomb that steers itself to the target."
+  },
+  {
+   "id": "ww2-r4m",
+   "name": "R4M Rocket Rack",
+   "category": "addon",
+   "slot": "payload",
+   "kind": "missiles",
+   "rarity": "rare",
+   "weapon": {
+    "damage": 38.4,
+    "count": 3,
+    "interval": 4.0
+   },
+   "color": "#A35A3A",
+   "desc": "Unguided rockets fired in a salvo at the nearest enemies."
+  },
+  {
+   "id": "ww2-x4",
+   "name": "Ruhrstahl X-4",
+   "category": "addon",
+   "slot": "payload",
+   "kind": "missiles",
+   "rarity": "epic",
+   "weapon": {
+    "damage": 75.0,
+    "count": 2,
+    "interval": 4.0
+   },
+   "color": "#C8C8C0",
+   "desc": "An early wire-guided air-to-air missile."
+  }
+ ]
+}

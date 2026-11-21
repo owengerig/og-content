@@ -22,6 +22,7 @@ If a phone is offline, nothing breaks.
 | `headlines.json` | Random headlines on the victory screen (`wins`), defeat screen (`losses`) and credits screen (`credits`) | games |
 | `games/<game>/manifest.json` | That game's **own version** and a hash of each of its files | that game only |
 | `games/<game>/store.json` | **Game-specific** store items (2D Clash gear, NATO Squad planes and add-ons, Card Combat packs): rarity (which sets the price), optional `price` override, optional `hidden` | that game only |
+| `games/<game>/sets/*.json` | **Item sets**: every item a game has (2D Clash weapons, armor and relics; NATO Squad planes and add-ons), each with a fixed rarity, stats and look. Nothing is randomly generated: loot and the store only pick among these. See "Item sets" below. | that game only |
 | `games/<game>/floaters/*.png` | That game's white menu-background shape (cube, jet, card, map, golf ball, book), tinted by the app | that game only |
 
 Game folders: `2d-clash`, `nato-squad`, `card-combat`, `borderline`, `pintally`, `storyhub` (each app's `gameId`).
@@ -50,6 +51,32 @@ is used.
   count up from it.
 - Removing an avatar someone already uses: players who picked it fall back to the first free avatar, so prefer
   changing its rarity over deleting it.
+
+## Item sets
+
+Items come in themed sets, released over time (2D Clash: `paleolithic`, `copper-age`; NATO Squad: `world-war-2`,
+`modern-era`). Each set is one file, `games/<game>/sets/<set-id>.json`:
+
+- `id` (the file name), `name`, `order` (release order) and when it unlocks: `minLevel` (2D Clash cube level) or
+  `minMission` (NATO Squad mission index, 0 = first).
+- `items`: each has an `id` (lowercase-hyphens, **never renamed or reused**: players' inventories store it),
+  `name`, `rarity` (common / rare / epic / mythic: decides its quality, stats and price) and fixed stats and look.
+- 2D Clash items: `category` weapon / armor / relic, `base` (the shape the game draws: StoneAxe, FlintSpear,
+  CopperHalberd, ChestArmor, Pilos, Circlet, Figurine, ...), `material` for armor (cloth / hide / fur), `color`
+  (+ optional `accent` for handles), `stats` (health, strength, agility, defense, crit) and an optional `element`
+  (fire / ice / poison, level 1-4; mythic items always have one).
+- NATO Squad: `models` holds each plane's side-view drawing (shapes in 0..1 coordinates, colored by the plane's
+  body / accent), so a new plane needs no app update. Planes: `model`, `gun` (spread / stream / forwardAndDown),
+  `stats` (damage, fireInterval, hull, speed, regen), `colors`. Add-ons: `slot` + `kind` (gun: firepower;
+  payload: bombs, missiles; support: drone, warthog) with `stats` (damage, fireRate, crit, in %) and/or a `weapon`
+  (damage, interval, count).
+
+Loot picks the rarity first (og-content `economy.json`: normal enemies mostly common, bosses rare, final bosses epic
+with a tiny mythic chance), then one item of that rarity from the sets the player has reached. The store sells
+every item of those sets at its rarity's price.
+
+`python3 tools/check_sets.py` checks every set (unique ids, rarities, shapes the game can draw, stats, colors); the
+**Build manifest** workflow runs it on every push.
 
 ## Color themes
 

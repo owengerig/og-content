@@ -8,5 +8,28 @@
   "priceCommon": 2000,
   "priceRare": 4000,
   "priceEpic": 8000,
-  "priceMythic": 16000
+  "priceMythic": 16000,
+  "easyMultiplier": 0.75,
+  "hardMultiplier": 1.25,
+  "achievementGold": 1000,
+  "achievementGoldHard": 2500,
+  "achievementGoldLegendary": 5000,
+  "lootNormal": [
+    90,
+    10,
+    0,
+    0
+  ],
+  "lootBoss": [
+    10,
+    85,
+    5,
+    0
+  ],
+  "lootFinalBoss": [
+    0,
+    0,
+    98,
+    2
+  ]
 }

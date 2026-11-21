@@ -1,4 +1,4 @@
 {
-  "_comment": "2D Clash's own store items (armor, weapons, relics). Today the game rolls its stock at random, so nothing is listed yet; items listed here (by the game's item id) get this rarity, price or hidden flag. Unified item sets are the next step.",
+  "_comment": "2D Clash sells every item of the sets its cube has reached (games/2d-clash/sets/), priced by rarity. List an item id here to override its price ('price') or take it out of the store ('hidden'); it can still drop as loot.",
   "items": []
 }

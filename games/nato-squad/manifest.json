@@ -1,13 +1,21 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.2",
   "files": [
     {
       "path": "games/nato-squad/store.json",
-      "sha": "83f09a0bffac551ebb160ac1364222f124594ece"
+      "sha": "67c84e37abf8caf836b49afeccd908b2a80aeb34"
     },
     {
       "path": "games/nato-squad/floaters/jet.png",
       "sha": "440ecc6c92dc8f7043e7b605598f657f8919c0e9"
+    },
+    {
+      "path": "games/nato-squad/sets/modern-era.json",
+      "sha": "3be0efd4de4d0c0b28757b03502f12766899e39e"
+    },
+    {
+      "path": "games/nato-squad/sets/world-war-2.json",
+      "sha": "c7e9212f9574c9aa10c8519698c6ed628d79759e"
     }
   ]
 }

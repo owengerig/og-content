@@ -1,0 +1,703 @@
+{
+ "id": "modern-era",
+ "name": "Modern Era",
+ "order": 2,
+ "minMission": 4,
+ "description": "Today's fighters (F-35, F-22, F-15EX, F/A-18E/F, F-16V) with firepower upgrades, drone wingmen and the Warthog gun.",
+ "models": {
+  "f16v": {
+   "w": 128,
+   "h": 48,
+   "ops": [
+    [
+     "poly",
+     "hi",
+     "0.000,0.492 0.050,0.436 0.400,0.408 0.720,0.436 0.880,0.478 1.000,0.534 0.880,0.590 0.740,0.660 0.560,0.660 0.300,0.618 0.060,0.590 0.000,0.562"
+    ],
+    [
+     "poly",
+     "mid",
+     "0.460,0.422 0.700,0.436 0.700,0.324 0.500,0.310"
+    ],
+    [
+     "poly",
+     "dark",
+     "0.660,0.429 0.715,0.429 0.715,0.310 0.670,0.324"
+    ],
+    [
+     "poly",
+     "lo",
+     "0.240,0.450 0.520,0.464 0.360,0.254 0.290,0.254"
+    ],
+    [
+     "poly",
+     "lo",
+     "0.000,0.520 0.150,0.534 0.050,0.394"
+    ],
+    [
+     "poly",
+     "body",
+     "0.030,0.576 0.200,0.618 0.140,0.950 0.080,0.950"
+    ],
+    [
+     "poly",
+     "mid",
+     "0.100,0.450 0.170,0.450 0.140,0.310"
+    ],
+    [
+     "rect",
+     "dark",
+     0.0,
+     0.45,
+     0.04,
+     0.562
+    ],
+    [
+     "ellipse",
+     "glass",
+     0.76,
+     0.674,
+     0.1,
+     0.112
+    ],
+    [
+     "rect",
+     "accent",
+     0.3,
+     0.52,
+     0.46,
+     0.562
+    ]
+   ]
+  },
+  "fa18e": {
+   "w": 132,
+   "h": 48,
+   "ops": [
+    [
+     "poly",
+     "lo",
+     "0.140,0.576 0.280,0.604 0.220,0.900 0.160,0.900"
+    ],
+    [
+     "poly",
+     "hi",
+     "0.000,0.450 0.050,0.394 0.400,0.366 0.700,0.394 0.860,0.450 1.000,0.506 0.860,0.562 0.700,0.632 0.500,0.632 0.300,0.604 0.060,0.576 0.000,0.534"
+    ],
+    [
+     "poly",
+     "mid",
+     "0.480,0.562 0.820,0.541 0.600,0.492"
+    ],
+    [
+     "poly",
+     "lo",
+     "0.260,0.436 0.520,0.450 0.380,0.240 0.310,0.240"
+    ],
+    [
+     "poly",
+     "dark",
+     "0.460,0.380 0.560,0.380 0.550,0.478 0.460,0.478"
+    ],
+    [
+     "poly",
+     "lo",
+     "0.000,0.492 0.160,0.506 0.050,0.380"
+    ],
+    [
+     "poly",
+     "body",
+     "0.180,0.576 0.320,0.604 0.260,0.940 0.200,0.940"
+    ],
+    [
+     "rect",
+     "dark",
+     0.0,
+     0.408,
+     0.04,
+     0.534
+    ],
+    [
+     "ellipse",
+     "glass",
+     0.74,
+     0.618,
+     0.09,
+     0.098
+    ],
+    [
+     "rect",
+     "accent",
+     0.36,
+     0.492,
+     0.48,
+     0.534
+    ]
+   ]
+  },
+  "fa18f": {
+   "w": 132,
+   "h": 48,
+   "ops": [
+    [
+     "poly",
+     "lo",
+     "0.140,0.576 0.280,0.604 0.220,0.900 0.160,0.900"
+    ],
+    [
+     "poly",
+     "hi",
+     "0.000,0.450 0.050,0.394 0.400,0.366 0.700,0.394 0.860,0.450 1.000,0.506 0.860,0.562 0.700,0.632 0.500,0.632 0.300,0.604 0.060,0.576 0.000,0.534"
+    ],
+    [
+     "poly",
+     "mid",
+     "0.480,0.562 0.820,0.541 0.600,0.492"
+    ],
+    [
+     "poly",
+     "lo",
+     "0.260,0.436 0.520,0.450 0.380,0.240 0.310,0.240"
+    ],
+    [
+     "poly",
+     "dark",
+     "0.460,0.380 0.560,0.380 0.550,0.478 0.460,0.478"
+    ],
+    [
+     "poly",
+     "lo",
+     "0.000,0.492 0.160,0.506 0.050,0.380"
+    ],
+    [
+     "poly",
+     "body",
+     "0.180,0.576 0.320,0.604 0.260,0.940 0.200,0.940"
+    ],
+    [
+     "rect",
+     "dark",
+     0.0,
+     0.408,
+     0.04,
+     0.534
+    ],
+    [
+     "ellipse",
+     "glass",
+     0.69,
+     0.618,
+     0.14,
+     0.098
+    ],
+    [
+     "rect",
+     "accent",
+     0.36,
+     0.492,
+     0.48,
+     0.534
+    ]
+   ]
+  },
+  "f35": {
+   "w": 128,
+   "h": 48,
+   "ops": [
+    [
+     "poly",
+     "lo",
+     "0.02,0.40 0.20,0.42 0.24,0.36 0.06,0.30"
+    ],
+    [
+     "poly",
+     "lo",
+     "0.34,0.42 0.62,0.44 0.44,0.26 0.32,0.26"
+    ],
+    [
+     "poly",
+     "mid",
+     "0.10,0.58 0.26,0.60 0.22,0.93 0.14,0.93"
+    ],
+    [
+     "poly",
+     "hi",
+     "0.0,0.40 0.04,0.34 0.30,0.32 0.62,0.34 0.84,0.40 1.0,0.48 0.86,0.54 0.70,0.60 0.52,0.62 0.30,0.60 0.08,0.58 0.0,0.54"
+    ],
+    [
+     "poly",
+     "body",
+     "0.04,0.58 0.20,0.60 0.12,0.97 0.05,0.97"
+    ],
+    [
+     "rect",
+     "dark",
+     0.0,
+     0.38,
+     0.05,
+     0.55
+    ],
+    [
+     "poly",
+     "dark",
+     "0.54,0.40 0.66,0.40 0.62,0.50 0.52,0.50"
+    ],
+    [
+     "poly",
+     "hi",
+     "0.36,0.38 0.62,0.40 0.48,0.14 0.38,0.14"
+    ],
+    [
+     "rect",
+     "accent",
+     0.28,
+     0.47,
+     0.46,
+     0.5
+    ],
+    [
+     "ellipse",
+     "glass",
+     0.71,
+     0.6,
+     0.11,
+     0.1
+    ]
+   ]
+  },
+  "f15ex": {
+   "w": 132,
+   "h": 50,
+   "ops": [
+    [
+     "poly",
+     "lo",
+     "0.060,0.598 0.200,0.624 0.160,0.920 0.100,0.920"
+    ],
+    [
+     "poly",
+     "hi",
+     "0.000,0.455 0.040,0.390 0.400,0.364 0.700,0.390 0.880,0.455 1.000,0.520 0.880,0.572 0.720,0.650 0.580,0.702 0.460,0.650 0.100,0.598 0.000,0.559"
+    ],
+    [
+     "poly",
+     "mid",
+     "0.440,0.364 0.640,0.377 0.660,0.546 0.460,0.559"
+    ],
+    [
+     "poly",
+     "dark",
+     "0.620,0.377 0.665,0.390 0.675,0.533 0.640,0.540"
+    ],
+    [
+     "poly",
+     "lo",
+     "0.220,0.429 0.500,0.442 0.340,0.234 0.270,0.234"
+    ],
+    [
+     "poly",
+     "lo",
+     "0.000,0.468 0.140,0.494 0.040,0.364"
+    ],
+    [
+     "poly",
+     "body",
+     "0.020,0.598 0.170,0.624 0.130,0.970 0.070,0.970"
+    ],
+    [
+     "rect",
+     "dark",
+     0.0,
+     0.416,
+     0.03,
+     0.546
+    ],
+    [
+     "ellipse",
+     "glass",
+     0.7,
+     0.702,
+     0.09,
+     0.117
+    ],
+    [
+     "rect",
+     "accent",
+     0.24,
+     0.546,
+     0.42,
+     0.585
+    ]
+   ]
+  },
+  "f22": {
+   "w": 136,
+   "h": 46,
+   "ops": [
+    [
+     "poly",
+     "lo",
+     "0.040,0.574 0.180,0.601 0.130,0.900 0.070,0.900"
+    ],
+    [
+     "poly",
+     "lo",
+     "0.000,0.493 0.160,0.520 0.060,0.385"
+    ],
+    [
+     "poly",
+     "hi",
+     "0.000,0.439 0.050,0.385 0.300,0.358 0.620,0.371 0.820,0.425 1.000,0.493 0.840,0.547 0.680,0.601 0.480,0.628 0.260,0.601 0.060,0.574 0.000,0.520"
+    ],
+    [
+     "poly",
+     "mid",
+     "0.240,0.439 0.560,0.452 0.360,0.196 0.280,0.196"
+    ],
+    [
+     "poly",
+     "body",
+     "0.080,0.574 0.240,0.601 0.180,0.960 0.110,0.960"
+    ],
+    [
+     "poly",
+     "dark",
+     "0.520,0.425 0.640,0.439 0.620,0.534 0.500,0.520"
+    ],
+    [
+     "rect",
+     "dark",
+     0.0,
+     0.412,
+     0.04,
+     0.534
+    ],
+    [
+     "ellipse",
+     "glass",
+     0.73,
+     0.601,
+     0.12,
+     0.095
+    ],
+    [
+     "rect",
+     "accent",
+     0.28,
+     0.452,
+     0.44,
+     0.486
+    ]
+   ]
+  }
+ },
+ "items": [
+  {
+   "id": "mod-f16v",
+   "name": "F-16V Viper",
+   "category": "plane",
+   "model": "f16v",
+   "rarity": "common",
+   "role": "Multirole Fighter",
+   "gun": "stream",
+   "stats": {
+    "damage": 15.6,
+    "fireInterval": 0.12,
+    "hull": 144,
+    "speed": 8.4,
+    "regen": 6.0
+   },
+   "colors": {
+    "body": "#8F9AA6",
+    "accent": "#E85A2A"
+   },
+   "desc": "Light and agile, with a fast 20 mm stream."
+  },
+  {
+   "id": "mod-f16-b70",
+   "name": "F-16 Block 70 Viper",
+   "category": "plane",
+   "model": "f16v",
+   "rarity": "rare",
+   "role": "Multirole Fighter",
+   "gun": "stream",
+   "stats": {
+    "damage": 18.0,
+    "fireInterval": 0.114,
+    "hull": 165,
+    "speed": 8.6,
+    "regen": 6.9
+   },
+   "colors": {
+    "body": "#7E8A96",
+    "accent": "#E85A2A"
+   },
+   "desc": "New-build Viper with AESA radar and conformal fuel tanks."
+  },
+  {
+   "id": "mod-fa18e",
+   "name": "F/A-18E Super Hornet",
+   "category": "plane",
+   "model": "fa18e",
+   "rarity": "common",
+   "role": "Strike Fighter",
+   "gun": "forwardAndDown",
+   "stats": {
+    "damage": 16.9,
+    "fireInterval": 0.15,
+    "hull": 169,
+    "speed": 7.6,
+    "regen": 7.0
+   },
+   "colors": {
+    "body": "#8C96A0",
+    "accent": "#E0B030"
+   },
+   "desc": "Carrier strike fighter: fires forward and down at ground targets."
+  },
+  {
+   "id": "mod-fa18f",
+   "name": "F/A-18F Super Hornet",
+   "category": "plane",
+   "model": "fa18f",
+   "rarity": "rare",
+   "role": "Strike Fighter",
+   "gun": "forwardAndDown",
+   "stats": {
+    "damage": 19.4,
+    "fireInterval": 0.142,
+    "hull": 194,
+    "speed": 7.8,
+    "regen": 8.0
+   },
+   "colors": {
+    "body": "#7C8792",
+    "accent": "#E0B030"
+   },
+   "desc": "The two-seat Super Hornet: a weapons officer spots more targets."
+  },
+  {
+   "id": "mod-f35a",
+   "name": "F-35A Lightning II",
+   "category": "plane",
+   "model": "f35",
+   "rarity": "rare",
+   "role": "Stealth Multirole",
+   "gun": "spread",
+   "stats": {
+    "damage": 18.7,
+    "fireInterval": 0.123,
+    "hull": 180,
+    "speed": 8.4,
+    "regen": 8.0
+   },
+   "colors": {
+    "body": "#5F666E",
+    "accent": "#F0C040"
+   },
+   "desc": "Stealth fighter whose cannon fans out as gun power rises."
+  },
+  {
+   "id": "mod-f35b",
+   "name": "F-35B Lightning II",
+   "category": "plane",
+   "model": "f35",
+   "rarity": "epic",
+   "role": "Stealth STOVL",
+   "gun": "spread",
+   "stats": {
+    "damage": 21.5,
+    "fireInterval": 0.117,
+    "hull": 206,
+    "speed": 8.6,
+    "regen": 9.2
+   },
+   "colors": {
+    "body": "#4F565E",
+    "accent": "#F0C040"
+   },
+   "desc": "Short take-off and vertical landing, stealthy and tough."
+  },
+  {
+   "id": "mod-f15ex",
+   "name": "F-15EX Eagle II",
+   "category": "plane",
+   "model": "f15ex",
+   "rarity": "epic",
+   "role": "Heavy Air Superiority",
+   "gun": "spread",
+   "stats": {
+    "damage": 24.8,
+    "fireInterval": 0.126,
+    "hull": 231,
+    "speed": 8.4,
+    "regen": 7.9
+   },
+   "colors": {
+    "body": "#7A8C9A",
+    "accent": "#3AA0E0"
+   },
+   "desc": "Big, fast and heavily armed: the newest Eagle."
+  },
+  {
+   "id": "mod-f22",
+   "name": "F-22 Raptor",
+   "category": "plane",
+   "model": "f22",
+   "rarity": "mythic",
+   "role": "Stealth Air Dominance",
+   "gun": "stream",
+   "stats": {
+    "damage": 27.1,
+    "fireInterval": 0.085,
+    "hull": 252,
+    "speed": 9.6,
+    "regen": 10.8
+   },
+   "colors": {
+    "body": "#6A737C",
+    "accent": "#E0E8F0"
+   },
+   "desc": "The fastest, deadliest fighter in the squad."
+  },
+  {
+   "id": "mod-feed",
+   "name": "Improved Feed System",
+   "category": "addon",
+   "slot": "gun",
+   "kind": "firepower",
+   "rarity": "common",
+   "stats": {
+    "fireRate": 6.0
+   },
+   "color": "#8F9AA6",
+   "desc": "Faster linkless ammunition feed."
+  },
+  {
+   "id": "mod-ap-rounds",
+   "name": "Armor-Piercing Rounds",
+   "category": "addon",
+   "slot": "gun",
+   "kind": "firepower",
+   "rarity": "rare",
+   "stats": {
+    "damage": 14.4,
+    "fireRate": 4.8
+   },
+   "color": "#5E6670",
+   "desc": "Tungsten-core rounds hit harder."
+  },
+  {
+   "id": "mod-hms",
+   "name": "Helmet-Mounted Sight",
+   "category": "addon",
+   "slot": "gun",
+   "kind": "firepower",
+   "rarity": "epic",
+   "stats": {
+    "damage": 15.0,
+    "crit": 7.5
+   },
+   "color": "#3AA0E0",
+   "desc": "Look at a target to lock it: more critical hits."
+  },
+  {
+   "id": "mod-scout-drone",
+   "name": "Scout Drone",
+   "category": "addon",
+   "slot": "support",
+   "kind": "drone",
+   "rarity": "common",
+   "weapon": {
+    "damage": 4.5,
+    "interval": 0.33
+   },
+   "color": "#9AA6B2",
+   "desc": "A small drone that flies beside you and fires at the nearest enemy."
+  },
+  {
+   "id": "mod-reaper",
+   "name": "MQ-9 Reaper",
+   "category": "addon",
+   "slot": "support",
+   "kind": "drone",
+   "rarity": "rare",
+   "weapon": {
+    "damage": 7.2,
+    "interval": 0.3
+   },
+   "color": "#8A8F96",
+   "desc": "A hunter-killer drone with a heavier gun."
+  },
+  {
+   "id": "mod-valkyrie",
+   "name": "XQ-58 Valkyrie",
+   "category": "addon",
+   "slot": "support",
+   "kind": "drone",
+   "rarity": "epic",
+   "weapon": {
+    "damage": 11.2,
+    "interval": 0.28
+   },
+   "color": "#5F666E",
+   "desc": "A stealthy loyal wingman."
+  },
+  {
+   "id": "mod-ghost-bat",
+   "name": "MQ-28 Ghost Bat",
+   "category": "addon",
+   "slot": "support",
+   "kind": "drone",
+   "rarity": "mythic",
+   "weapon": {
+    "damage": 18.0,
+    "interval": 0.25
+   },
+   "color": "#3A3F46",
+   "desc": "An AI wingman that fights like a pilot."
+  },
+  {
+   "id": "mod-gau12",
+   "name": "GAU-12 Gun Pod",
+   "category": "addon",
+   "slot": "support",
+   "kind": "warthog",
+   "rarity": "rare",
+   "weapon": {
+    "damage": 7.2,
+    "interval": 0.14
+   },
+   "color": "#7A7F70",
+   "desc": "A 25 mm gun pod that fires down at ground targets at an angle."
+  },
+  {
+   "id": "mod-gau8",
+   "name": "Warthog Gun (GAU-8 Avenger)",
+   "category": "addon",
+   "slot": "support",
+   "kind": "warthog",
+   "rarity": "epic",
+   "weapon": {
+    "damage": 11.2,
+    "interval": 0.1
+   },
+   "color": "#6B705C",
+   "desc": "The A-10's 30 mm rotary cannon, firing down at an angle into ground targets."
+  },
+  {
+   "id": "mod-twin-gau8",
+   "name": "Twin Warthog Guns",
+   "category": "addon",
+   "slot": "support",
+   "kind": "warthog",
+   "rarity": "mythic",
+   "weapon": {
+    "damage": 18.0,
+    "interval": 0.07
+   },
+   "color": "#4F5444",
+   "desc": "Two GAU-8 Avengers. Nothing on the ground survives."
+  }
+ ]
+}

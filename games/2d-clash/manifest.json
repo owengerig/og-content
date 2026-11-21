@@ -1,13 +1,21 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.2",
   "files": [
     {
       "path": "games/2d-clash/store.json",
-      "sha": "bdd06d7402e43b877d01e8d01bee0e91be4216d9"
+      "sha": "259c6228ff9d1dd3394d954d80265633b89a8461"
     },
     {
       "path": "games/2d-clash/floaters/cube.png",
       "sha": "4cfe597c29e0dec9d7fc08ef6b88d8618b3d4254"
+    },
+    {
+      "path": "games/2d-clash/sets/copper-age.json",
+      "sha": "a9010fa8beb7351b22d7364da5dbbc0fbd45eabd"
+    },
+    {
+      "path": "games/2d-clash/sets/paleolithic.json",
+      "sha": "035d31d746693cf14da22d1d7c434cd7d3336cb1"
     }
   ]
 }

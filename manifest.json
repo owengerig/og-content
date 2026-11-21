@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.1.1",
   "files": [
     {
       "path": "cosmetics.json",
@@ -7,7 +7,7 @@
     },
     {
       "path": "economy.json",
-      "sha": "df8e6d29f6678e78c7c96fad16614e4bebdccb8d"
+      "sha": "be2394a3ae4dc00964fe339edb1d2eb10bf35733"
     },
     {
       "path": "headlines.json",

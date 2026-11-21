@@ -19,6 +19,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check the color themes (contrast, look-alikes, color blindness)
         run: python3 tools/themes.py check
+      - name: Check the item sets (ids, rarities, stats, colors)
+        run: python3 tools/check_sets.py
       - run: python3 tools/build_manifest.py
       - name: Commit the manifests
         run: |
