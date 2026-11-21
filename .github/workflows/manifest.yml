@@ -1,11 +1,12 @@
-# Keeps manifest.json (file hashes + og-content's version) up to date: after every push that changes content,
-# it rebuilds the manifest, bumps the patch version and commits it. Apps only download what changed.
+# Keeps the manifests (file hashes + versions: manifest.json for shared content, games/<game>/manifest.json per
+# game) and versions.json up to date: after every push that changes content, it rebuilds them, bumps the patch
+# version of each manifest whose files changed and commits them. Apps only download what changed.
 name: Build manifest
 
 on:
   push:
     branches: [main]
-    paths-ignore: ["manifest.json"]
+    paths-ignore: ["manifest.json", "versions.json", "games/*/manifest.json"]
   workflow_dispatch:
 
 permissions:
@@ -19,10 +20,11 @@ jobs:
       - name: Check the color themes (contrast, look-alikes, color blindness)
         run: python3 tools/themes.py check
       - run: python3 tools/build_manifest.py
-      - name: Commit the manifest
+      - name: Commit the manifests
         run: |
-          if git diff --quiet manifest.json; then echo "manifest unchanged"; exit 0; fi
+          git add manifest.json versions.json games/*/manifest.json
+          if git diff --cached --quiet; then echo "manifests unchanged"; exit 0; fi
           git config user.name "og-content-bot"
           git config user.email "og-content-bot@users.noreply.github.com"
-          git commit -m "Update manifest to $(python3 -c "import json;print(json.load(open('manifest.json'))['version'])")" manifest.json
+          git commit -m "Update manifests: $(python3 -c "import json;v=json.load(open('versions.json'));print('shared', v['shared'], ' '.join(k+' '+x for k,x in v['games'].items()))")"
           git push

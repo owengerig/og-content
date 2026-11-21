@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "games/2d-clash/store.json",
+      "sha": "bdd06d7402e43b877d01e8d01bee0e91be4216d9"
+    },
+    {
+      "path": "games/2d-clash/floaters/cube.png",
+      "sha": "4cfe597c29e0dec9d7fc08ef6b88d8618b3d4254"
+    }
+  ]
+}

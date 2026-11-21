@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "games/pintally/store.json",
+      "sha": "f92b7102c4809b1a383cb4c3fd96443cf0b8ebdc"
+    },
+    {
+      "path": "games/pintally/floaters/golf-ball.png",
+      "sha": "4ac7d9373aff8c62873d04edefa0d7bbebb2ace4"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "games/borderline/store.json",
+      "sha": "f92b7102c4809b1a383cb4c3fd96443cf0b8ebdc"
+    },
+    {
+      "path": "games/borderline/floaters/map.png",
+      "sha": "75e4a11207313a97c867b9b4c3a8e10defb5e301"
+    }
+  ]
+}

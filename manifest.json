@@ -1,5 +1,5 @@
 {
-  "version": "1.0.1",
+  "version": "1.1.0",
   "files": [
     {
       "path": "cosmetics.json",
@@ -192,54 +192,6 @@
     {
       "path": "emotes/wow.png",
       "sha": "eb14b4b99d64522534c53c7a95c305a025d13fbd"
-    },
-    {
-      "path": "floaters/book.png",
-      "sha": "a508aaa45e45f89b722432b662372113853f5478"
-    },
-    {
-      "path": "floaters/card.png",
-      "sha": "1ba847038d0ccbc3efeedd54a857a5b497bd2d8f"
-    },
-    {
-      "path": "floaters/cube.png",
-      "sha": "4cfe597c29e0dec9d7fc08ef6b88d8618b3d4254"
-    },
-    {
-      "path": "floaters/golf-ball.png",
-      "sha": "4ac7d9373aff8c62873d04edefa0d7bbebb2ace4"
-    },
-    {
-      "path": "floaters/jet.png",
-      "sha": "440ecc6c92dc8f7043e7b605598f657f8919c0e9"
-    },
-    {
-      "path": "floaters/map.png",
-      "sha": "75e4a11207313a97c867b9b4c3a8e10defb5e301"
-    },
-    {
-      "path": "games/2d-clash/store.json",
-      "sha": "bdd06d7402e43b877d01e8d01bee0e91be4216d9"
-    },
-    {
-      "path": "games/borderline/store.json",
-      "sha": "f92b7102c4809b1a383cb4c3fd96443cf0b8ebdc"
-    },
-    {
-      "path": "games/card-combat/store.json",
-      "sha": "1f615f764c2cd265c5d2490a90cac751036ecc93"
-    },
-    {
-      "path": "games/nato-squad/store.json",
-      "sha": "83f09a0bffac551ebb160ac1364222f124594ece"
-    },
-    {
-      "path": "games/pintally/store.json",
-      "sha": "f92b7102c4809b1a383cb4c3fd96443cf0b8ebdc"
-    },
-    {
-      "path": "games/storyhub/store.json",
-      "sha": "f92b7102c4809b1a383cb4c3fd96443cf0b8ebdc"
     }
   ]
 }

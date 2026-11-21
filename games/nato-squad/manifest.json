@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "games/nato-squad/store.json",
+      "sha": "83f09a0bffac551ebb160ac1364222f124594ece"
+    },
+    {
+      "path": "games/nato-squad/floaters/jet.png",
+      "sha": "440ecc6c92dc8f7043e7b605598f657f8919c0e9"
+    }
+  ]
+}
