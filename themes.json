@@ -1,5 +1,5 @@
 {
-  "_comment": "Monthly color themes for every OG Software app. Each month: four colors, each with a role (see tools/themes.py). Colors are #RRGGBB hex. Edit names/hex freely, then run: python3 tools/themes.py assign (picks roles and checks contrast). Apps pick the month from the device date and fall back to 'default' if a theme fails the checks.",
+  "_comment": "Monthly color themes for every OG Software app. Each month: four colors, each with a role (see tools/themes.py). Colors are #RRGGBB hex. Edit names/hex freely, then run: python3 tools/themes.py assign (picks roles and checks contrast). Apps pick the month from the device date and fall back to 'default' if a theme fails the checks. apps: each app's own default theme, used when the player turns monthly themes off in Settings (or when a month fails the checks).",
   "default": {
     "label": "Default",
     "primary": {
@@ -314,6 +314,152 @@
         "id": "pine-green",
         "name": "Pine Green",
         "hex": "#1F5D3B"
+      }
+    }
+  ],
+  "apps": [
+    {
+      "app": "2d-clash",
+      "label": "2D Clash",
+      "primary": {
+        "id": "candy-purple",
+        "name": "Candy Purple",
+        "hex": "#9B3FD8"
+      },
+      "secondary": {
+        "id": "candy-blue",
+        "name": "Candy Blue",
+        "hex": "#2F9CE8"
+      },
+      "frame": {
+        "id": "lavender-gray",
+        "name": "Lavender Gray",
+        "hex": "#8F86C9"
+      },
+      "ambient": {
+        "id": "sunset-glow",
+        "name": "Sunset Glow",
+        "hex": "#FF8C59"
+      }
+    },
+    {
+      "app": "nato-squad",
+      "label": "NATO Squad",
+      "primary": {
+        "id": "navy-steel",
+        "name": "Navy Steel",
+        "hex": "#33598C"
+      },
+      "secondary": {
+        "id": "haze-gray",
+        "name": "Haze Gray",
+        "hex": "#9AAABB"
+      },
+      "frame": {
+        "id": "amber",
+        "name": "Amber",
+        "hex": "#E0A030"
+      },
+      "ambient": {
+        "id": "sky-blue",
+        "name": "Sky Blue",
+        "hex": "#3A9AD9"
+      }
+    },
+    {
+      "app": "card-combat",
+      "label": "Card Combat",
+      "primary": {
+        "id": "royal-purple",
+        "name": "Royal Purple",
+        "hex": "#6A3FB8"
+      },
+      "secondary": {
+        "id": "parchment",
+        "name": "Parchment",
+        "hex": "#C9B48A"
+      },
+      "frame": {
+        "id": "rose",
+        "name": "Rose",
+        "hex": "#E06A9A"
+      },
+      "ambient": {
+        "id": "deep-teal",
+        "name": "Deep Teal",
+        "hex": "#17868C"
+      }
+    },
+    {
+      "app": "borderline",
+      "label": "Borderline",
+      "primary": {
+        "id": "ocean-blue",
+        "name": "Ocean Blue",
+        "hex": "#2E6FC8"
+      },
+      "secondary": {
+        "id": "burnt-orange",
+        "name": "Burnt Orange",
+        "hex": "#C8601E"
+      },
+      "frame": {
+        "id": "map-gray",
+        "name": "Map Gray",
+        "hex": "#9AB0C8"
+      },
+      "ambient": {
+        "id": "mint",
+        "name": "Mint",
+        "hex": "#4FC08A"
+      }
+    },
+    {
+      "app": "pintally",
+      "label": "PinTally",
+      "primary": {
+        "id": "pine-green",
+        "name": "Pine Green",
+        "hex": "#1F5E52"
+      },
+      "secondary": {
+        "id": "sage",
+        "name": "Sage",
+        "hex": "#9CC59A"
+      },
+      "frame": {
+        "id": "spring-green",
+        "name": "Spring Green",
+        "hex": "#7BD66B"
+      },
+      "ambient": {
+        "id": "fairway-green",
+        "name": "Fairway Green",
+        "hex": "#2E7D4F"
+      }
+    },
+    {
+      "app": "storyhub",
+      "label": "StoryHub",
+      "primary": {
+        "id": "ink-blue",
+        "name": "Ink Blue",
+        "hex": "#3A4FB0"
+      },
+      "secondary": {
+        "id": "plum",
+        "name": "Plum",
+        "hex": "#8A3F8F"
+      },
+      "frame": {
+        "id": "paper-gold",
+        "name": "Paper Gold",
+        "hex": "#E8B860"
+      },
+      "ambient": {
+        "id": "lavender-gray",
+        "name": "Lavender Gray",
+        "hex": "#8F86C9"
       }
     }
   ]

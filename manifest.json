@@ -1,5 +1,5 @@
 {
-  "version": "1.1.1",
+  "version": "1.1.2",
   "files": [
     {
       "path": "cosmetics.json",
@@ -15,7 +15,7 @@
     },
     {
       "path": "themes.json",
-      "sha": "75875825fbf301ab7e6260b68de232a043dd4b47"
+      "sha": "9f171321856e66cc59e3ed32898312fcac17bb8a"
     },
     {
       "path": "avatars/ace.png",

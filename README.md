@@ -78,6 +78,18 @@ every item of those sets at its rarity's price.
 `python3 tools/check_sets.py` checks every set (unique ids, rarities, shapes the game can draw, stats, colors); the
 **Build manifest** workflow runs it on every push.
 
+## Stickers and tattoos (one-use cosmetics)
+
+Bought in a game's store, applied once to one plane or cube, then used up. A plane or cube has one at a time
+(applying another replaces it).
+
+- `games/nato-squad/stickers.json`: one big decal per plane. `anchor` = nose, tail, body or all (each plane model in
+  the sets defines where those are), `shapes` in the anchor box's 0..1 space, clipped to the plane's outline.
+- `games/2d-clash/tattoos.json`: drawn on the side of a cube's face. `shapes`: tri / circle / rect with centre,
+  size, rotation and `ink` (black) or a color.
+
+Each has an `id` (sticker-... / tattoo-..., never renamed), `name`, `rarity` (sets the price) and `desc`.
+
 ## Color themes
 
 Each month has four colors, stored as `#RRGGBB` hex, the one format Unity, Android, iOS, web, PC and Xbox all read.
@@ -92,6 +104,10 @@ Every color also has an `id` (lowercase, hyphens) and a display `name`.
 
 Never themed (they carry meaning): PLAY / confirm green, back / cancel red, currency gold, rarity colors.
 Text color is never stored: apps pick white or dark ink for each surface, whichever contrasts more.
+
+**Each app's own default theme** (`apps` in `themes.json`): used when the player turns **Monthly color themes** off
+in Settings, and as the fallback when a month fails the checks. PinTally's is green (Pine Green, Sage, Spring Green,
+Fairway Green); 2D Clash keeps the candy purple and blue. Checked by the same rules as the months.
 
 **Changing a month**: edit its names / hex values in `themes.json`, then run `python3 tools/themes.py assign`. It
 picks which color takes which role and checks:

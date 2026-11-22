@@ -1,0 +1,551 @@
+{
+ "_comment": "NATO Squad stickers: one big decal per plane, bought in the store and applied once to one plane (then used up). anchor = where on the plane it goes (nose, tail, body or all), as defined by each plane model's anchors. Shapes use the anchor box's own 0..1 space (y up) and are clipped to the plane's outline. Colors: #RRGGBB, or body / accent.",
+ "items": [
+  {
+   "id": "sticker-checker-tail",
+   "name": "Checkerboard Tail",
+   "rarity": "common",
+   "anchor": "tail",
+   "desc": "Black and white checks on the tail fin.",
+   "shapes": [
+    {
+     "op": "rect",
+     "c": "#F4F1E8",
+     "x0": 0,
+     "y0": 0,
+     "x1": 1,
+     "y1": 1
+    },
+    {
+     "op": "rect",
+     "c": "#16181C",
+     "x0": 0.0,
+     "y0": 0.0,
+     "x1": 0.25,
+     "y1": 0.2
+    },
+    {
+     "op": "rect",
+     "c": "#16181C",
+     "x0": 0.0,
+     "y0": 0.4,
+     "x1": 0.25,
+     "y1": 0.6
+    },
+    {
+     "op": "rect",
+     "c": "#16181C",
+     "x0": 0.0,
+     "y0": 0.8,
+     "x1": 0.25,
+     "y1": 1.0
+    },
+    {
+     "op": "rect",
+     "c": "#16181C",
+     "x0": 0.25,
+     "y0": 0.2,
+     "x1": 0.5,
+     "y1": 0.4
+    },
+    {
+     "op": "rect",
+     "c": "#16181C",
+     "x0": 0.25,
+     "y0": 0.6,
+     "x1": 0.5,
+     "y1": 0.8
+    },
+    {
+     "op": "rect",
+     "c": "#16181C",
+     "x0": 0.5,
+     "y0": 0.0,
+     "x1": 0.75,
+     "y1": 0.2
+    },
+    {
+     "op": "rect",
+     "c": "#16181C",
+     "x0": 0.5,
+     "y0": 0.4,
+     "x1": 0.75,
+     "y1": 0.6
+    },
+    {
+     "op": "rect",
+     "c": "#16181C",
+     "x0": 0.5,
+     "y0": 0.8,
+     "x1": 0.75,
+     "y1": 1.0
+    },
+    {
+     "op": "rect",
+     "c": "#16181C",
+     "x0": 0.75,
+     "y0": 0.2,
+     "x1": 1.0,
+     "y1": 0.4
+    },
+    {
+     "op": "rect",
+     "c": "#16181C",
+     "x0": 0.75,
+     "y0": 0.6,
+     "x1": 1.0,
+     "y1": 0.8
+    }
+   ]
+  },
+  {
+   "id": "sticker-lightning",
+   "name": "Lightning Bolt",
+   "rarity": "common",
+   "anchor": "body",
+   "desc": "A yellow bolt down the fuselage.",
+   "shapes": [
+    {
+     "op": "poly",
+     "c": "#16181C",
+     "pts": "0.02,0.62 0.48,0.70 0.42,0.52 0.98,0.48 0.50,0.34 0.56,0.50 0.04,0.46"
+    },
+    {
+     "op": "poly",
+     "c": "#FFD23A",
+     "pts": "0.05,0.60 0.46,0.66 0.40,0.50 0.92,0.48 0.52,0.38 0.56,0.52 0.07,0.48"
+    }
+   ]
+  },
+  {
+   "id": "sticker-squadron-stripes",
+   "name": "Squadron Stripes",
+   "rarity": "common",
+   "anchor": "body",
+   "desc": "Two bold stripes in squadron colors.",
+   "shapes": [
+    {
+     "op": "poly",
+     "c": "#2F6FD8",
+     "pts": "0.30,0.0 0.44,0.0 0.30,1.0 0.16,1.0"
+    },
+    {
+     "op": "poly",
+     "c": "#FFC83A",
+     "pts": "0.48,0.0 0.62,0.0 0.48,1.0 0.34,1.0"
+    }
+   ]
+  },
+  {
+   "id": "sticker-shark-mouth",
+   "name": "Shark Mouth",
+   "rarity": "rare",
+   "anchor": "nose",
+   "desc": "The classic snarling shark mouth and eye on the nose.",
+   "shapes": [
+    {
+     "op": "poly",
+     "c": "#16181C",
+     "pts": "0.08,0.56 0.62,0.62 0.98,0.46 0.62,0.16 0.10,0.22 0.0,0.40"
+    },
+    {
+     "op": "poly",
+     "c": "#C8262C",
+     "pts": "0.14,0.52 0.60,0.56 0.90,0.45 0.60,0.22 0.16,0.26 0.08,0.40"
+    },
+    {
+     "op": "poly",
+     "c": "#F4F1E8",
+     "pts": "0.18,0.52 0.24,0.38 0.30,0.52"
+    },
+    {
+     "op": "poly",
+     "c": "#F4F1E8",
+     "pts": "0.30,0.52 0.36,0.38 0.42,0.52"
+    },
+    {
+     "op": "poly",
+     "c": "#F4F1E8",
+     "pts": "0.42,0.52 0.48,0.38 0.54,0.52"
+    },
+    {
+     "op": "poly",
+     "c": "#F4F1E8",
+     "pts": "0.54,0.52 0.60,0.38 0.66,0.52"
+    },
+    {
+     "op": "poly",
+     "c": "#F4F1E8",
+     "pts": "0.66,0.52 0.72,0.38 0.78,0.52"
+    },
+    {
+     "op": "poly",
+     "c": "#F4F1E8",
+     "pts": "0.78,0.52 0.84,0.38 0.90,0.52"
+    },
+    {
+     "op": "poly",
+     "c": "#F4F1E8",
+     "pts": "0.24,0.26 0.30,0.40 0.36,0.26"
+    },
+    {
+     "op": "poly",
+     "c": "#F4F1E8",
+     "pts": "0.36,0.26 0.42,0.40 0.48,0.26"
+    },
+    {
+     "op": "poly",
+     "c": "#F4F1E8",
+     "pts": "0.48,0.26 0.54,0.40 0.60,0.26"
+    },
+    {
+     "op": "poly",
+     "c": "#F4F1E8",
+     "pts": "0.60,0.26 0.66,0.40 0.72,0.26"
+    },
+    {
+     "op": "poly",
+     "c": "#F4F1E8",
+     "pts": "0.72,0.26 0.78,0.40 0.84,0.26"
+    },
+    {
+     "op": "ellipse",
+     "c": "#F4F1E8",
+     "x": 0.7,
+     "y": 0.78,
+     "rx": 0.07,
+     "ry": 0.12
+    },
+    {
+     "op": "ellipse",
+     "c": "#16181C",
+     "x": 0.72,
+     "y": 0.78,
+     "rx": 0.03,
+     "ry": 0.07
+    }
+   ]
+  },
+  {
+   "id": "sticker-red-tail",
+   "name": "Red Tail",
+   "rarity": "rare",
+   "anchor": "tail",
+   "desc": "A bright red tail with a row of white stars.",
+   "shapes": [
+    {
+     "op": "rect",
+     "c": "#C8262C",
+     "x0": 0,
+     "y0": 0,
+     "x1": 1,
+     "y1": 1
+    },
+    {
+     "op": "ellipse",
+     "c": "#F4F1E8",
+     "x": 0.18,
+     "y": 0.82,
+     "rx": 0.06,
+     "ry": 0.04
+    },
+    {
+     "op": "ellipse",
+     "c": "#F4F1E8",
+     "x": 0.39,
+     "y": 0.82,
+     "rx": 0.06,
+     "ry": 0.04
+    },
+    {
+     "op": "ellipse",
+     "c": "#F4F1E8",
+     "x": 0.6,
+     "y": 0.82,
+     "rx": 0.06,
+     "ry": 0.04
+    },
+    {
+     "op": "ellipse",
+     "c": "#F4F1E8",
+     "x": 0.81,
+     "y": 0.82,
+     "rx": 0.06,
+     "ry": 0.04
+    },
+    {
+     "op": "rect",
+     "c": "#16181C",
+     "x0": 0,
+     "y0": 0.9,
+     "x1": 1,
+     "y1": 1
+    }
+   ]
+  },
+  {
+   "id": "sticker-star-roundel",
+   "name": "Star Roundel",
+   "rarity": "rare",
+   "anchor": "body",
+   "desc": "A white star on a blue disc, with bars.",
+   "shapes": [
+    {
+     "op": "rect",
+     "c": "#F4F1E8",
+     "x0": 0.08,
+     "y0": 0.4,
+     "x1": 0.92,
+     "y1": 0.6
+    },
+    {
+     "op": "rect",
+     "c": "#C8262C",
+     "x0": 0.08,
+     "y0": 0.47,
+     "x1": 0.92,
+     "y1": 0.53
+    },
+    {
+     "op": "ellipse",
+     "c": "#1F3F8F",
+     "x": 0.5,
+     "y": 0.5,
+     "rx": 0.2,
+     "ry": 0.42
+    },
+    {
+     "op": "poly",
+     "c": "#F4F1E8",
+     "pts": "0.50,0.84 0.54,0.58 0.66,0.58 0.56,0.44 0.60,0.20 0.50,0.34 0.40,0.20 0.44,0.44 0.34,0.58 0.46,0.58"
+    }
+   ]
+  },
+  {
+   "id": "sticker-flames",
+   "name": "Hot Rod Flames",
+   "rarity": "epic",
+   "anchor": "nose",
+   "desc": "Flames licking back from the nose.",
+   "shapes": [
+    {
+     "op": "poly",
+     "c": "#E8461E",
+     "pts": "1.0,0.40 0.70,0.85 0.55,0.55 0.35,0.80 0.25,0.50 0.0,0.62 0.10,0.40 0.0,0.20 0.30,0.25 0.45,0.05 0.62,0.30 0.80,0.05"
+    },
+    {
+     "op": "poly",
+     "c": "#FFB020",
+     "pts": "0.98,0.42 0.72,0.70 0.58,0.50 0.40,0.65 0.30,0.45 0.12,0.45 0.28,0.32 0.46,0.20 0.62,0.36 0.80,0.20"
+    },
+    {
+     "op": "poly",
+     "c": "#FFE680",
+     "pts": "0.95,0.43 0.76,0.56 0.62,0.44 0.46,0.48 0.56,0.36 0.76,0.32"
+    }
+   ]
+  },
+  {
+   "id": "sticker-tiger-stripes",
+   "name": "Tiger Stripes",
+   "rarity": "epic",
+   "anchor": "body",
+   "desc": "Orange paint with black tiger stripes.",
+   "shapes": [
+    {
+     "op": "rect",
+     "c": "#E8862A",
+     "x0": 0,
+     "y0": 0,
+     "x1": 1,
+     "y1": 1
+    },
+    {
+     "op": "poly",
+     "c": "#16181C",
+     "pts": "0.10,1.0 0.17,1.0 0.08,0.35 0.04,0.55"
+    },
+    {
+     "op": "poly",
+     "c": "#16181C",
+     "pts": "0.30,1.0 0.37,1.0 0.28,0.35 0.24,0.55"
+    },
+    {
+     "op": "poly",
+     "c": "#16181C",
+     "pts": "0.50,1.0 0.57,1.0 0.48,0.35 0.44,0.55"
+    },
+    {
+     "op": "poly",
+     "c": "#16181C",
+     "pts": "0.70,1.0 0.77,1.0 0.68,0.35 0.64,0.55"
+    },
+    {
+     "op": "poly",
+     "c": "#16181C",
+     "pts": "0.90,1.0 0.97,1.0 0.88,0.35 0.84,0.55"
+    },
+    {
+     "op": "poly",
+     "c": "#16181C",
+     "pts": "0.18,0.0 0.25,0.0 0.28,0.45 0.21,0.30"
+    },
+    {
+     "op": "poly",
+     "c": "#16181C",
+     "pts": "0.40,0.0 0.47,0.0 0.50,0.45 0.43,0.30"
+    },
+    {
+     "op": "poly",
+     "c": "#16181C",
+     "pts": "0.62,0.0 0.69,0.0 0.72,0.45 0.65,0.30"
+    },
+    {
+     "op": "poly",
+     "c": "#16181C",
+     "pts": "0.84,0.0 0.91,0.0 0.94,0.45 0.87,0.30"
+    }
+   ]
+  },
+  {
+   "id": "sticker-desert-camo",
+   "name": "Desert Camo",
+   "rarity": "epic",
+   "anchor": "all",
+   "desc": "Sand, olive and brown camouflage over the whole plane.",
+   "shapes": [
+    {
+     "op": "rect",
+     "c": "#C9A66B",
+     "x0": 0,
+     "y0": 0,
+     "x1": 1,
+     "y1": 1
+    },
+    {
+     "op": "ellipse",
+     "c": "#6E7A4A",
+     "x": 0.18,
+     "y": 0.5,
+     "rx": 0.12,
+     "ry": 0.1
+    },
+    {
+     "op": "ellipse",
+     "c": "#8A5A34",
+     "x": 0.4,
+     "y": 0.58,
+     "rx": 0.1,
+     "ry": 0.09
+    },
+    {
+     "op": "ellipse",
+     "c": "#6E7A4A",
+     "x": 0.6,
+     "y": 0.46,
+     "rx": 0.13,
+     "ry": 0.09
+    },
+    {
+     "op": "ellipse",
+     "c": "#8A5A34",
+     "x": 0.8,
+     "y": 0.55,
+     "rx": 0.09,
+     "ry": 0.08
+    },
+    {
+     "op": "ellipse",
+     "c": "#6E7A4A",
+     "x": 0.1,
+     "y": 0.8,
+     "rx": 0.06,
+     "ry": 0.12
+    },
+    {
+     "op": "ellipse",
+     "c": "#8A5A34",
+     "x": 0.3,
+     "y": 0.38,
+     "rx": 0.08,
+     "ry": 0.06
+    },
+    {
+     "op": "ellipse",
+     "c": "#6E7A4A",
+     "x": 0.9,
+     "y": 0.42,
+     "rx": 0.06,
+     "ry": 0.05
+    }
+   ]
+  },
+  {
+   "id": "sticker-ace-of-aces",
+   "name": "Ace of Aces",
+   "rarity": "mythic",
+   "anchor": "all",
+   "desc": "Gold lightning, a gold tail and a row of victory stars: the mark of a legend.",
+   "shapes": [
+    {
+     "op": "poly",
+     "c": "#16181C",
+     "pts": "0.06,0.52 0.40,0.56 0.36,0.48 0.94,0.50 0.44,0.42 0.48,0.48 0.08,0.46"
+    },
+    {
+     "op": "poly",
+     "c": "#FFC83A",
+     "pts": "0.08,0.51 0.40,0.54 0.37,0.48 0.88,0.50 0.45,0.44 0.48,0.49 0.10,0.47"
+    },
+    {
+     "op": "rect",
+     "c": "#FFC83A",
+     "x0": 0.0,
+     "y0": 0.78,
+     "x1": 0.3,
+     "y1": 1.0
+    },
+    {
+     "op": "ellipse",
+     "c": "#FFE680",
+     "x": 0.5,
+     "y": 0.6,
+     "rx": 0.012,
+     "ry": 0.03
+    },
+    {
+     "op": "ellipse",
+     "c": "#FFE680",
+     "x": 0.535,
+     "y": 0.6,
+     "rx": 0.012,
+     "ry": 0.03
+    },
+    {
+     "op": "ellipse",
+     "c": "#FFE680",
+     "x": 0.5700000000000001,
+     "y": 0.6,
+     "rx": 0.012,
+     "ry": 0.03
+    },
+    {
+     "op": "ellipse",
+     "c": "#FFE680",
+     "x": 0.605,
+     "y": 0.6,
+     "rx": 0.012,
+     "ry": 0.03
+    },
+    {
+     "op": "ellipse",
+     "c": "#FFE680",
+     "x": 0.64,
+     "y": 0.6,
+     "rx": 0.012,
+     "ry": 0.03
+    }
+   ]
+  }
+ ]
+}

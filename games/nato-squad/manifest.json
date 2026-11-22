@@ -1,6 +1,10 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "files": [
+    {
+      "path": "games/nato-squad/stickers.json",
+      "sha": "3cd180dc530336e7b2f0489d3d980b5aaca9b7d4"
+    },
     {
       "path": "games/nato-squad/store.json",
       "sha": "67c84e37abf8caf836b49afeccd908b2a80aeb34"
@@ -11,11 +15,11 @@
     },
     {
       "path": "games/nato-squad/sets/modern-era.json",
-      "sha": "3be0efd4de4d0c0b28757b03502f12766899e39e"
+      "sha": "8e6d27173a3f54b9bfab1651a6c6521d44c865a8"
     },
     {
       "path": "games/nato-squad/sets/world-war-2.json",
-      "sha": "c7e9212f9574c9aa10c8519698c6ed628d79759e"
+      "sha": "e0216f9514cdc53d7bc68b978627ac7eda344156"
     }
   ]
 }

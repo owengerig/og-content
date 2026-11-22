@@ -138,8 +138,8 @@ def save(d):
 
 def check(d):
     bad = 0
-    for key in ["default"] + [m["month"] for m in d["months"]]:
-        t = d["default"] if key == "default" else next(m for m in d["months"] if m["month"] == key)
+    themes = [("default", d["default"])] + [(m["month"], m) for m in d["months"]] + [("app " + a["app"], a) for a in d.get("apps", [])]
+    for key, t in themes:
         for r in ROLES:
             h = t[r]["hex"]
             assert len(h) == 7 and h[0] == "#" and all(ch in "0123456789ABCDEF" for ch in h[1:]), f"{key} {r}: hex must be #RRGGBB uppercase, got {h}"

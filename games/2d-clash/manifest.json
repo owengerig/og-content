@@ -1,9 +1,13 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "files": [
     {
       "path": "games/2d-clash/store.json",
       "sha": "259c6228ff9d1dd3394d954d80265633b89a8461"
+    },
+    {
+      "path": "games/2d-clash/tattoos.json",
+      "sha": "aec006b3800bd78553e6a2348db46e6f2dc197b1"
     },
     {
       "path": "games/2d-clash/floaters/cube.png",

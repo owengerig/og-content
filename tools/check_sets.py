@@ -7,7 +7,8 @@ mythic) and #RRGGBB colors. Then the game's own rules:
 
   2d-clash     category weapon / armor / relic, a base the game can draw (BASES below), stats, armor material,
                mythic items are elemental (fire / ice / poison, level 1-4)
-  nato-squad   category plane (model drawn from the set's "models", gun pattern, stats) or addon (slot + kind,
+  nato-squad   category plane (model drawn from the set's "models": shapes {op, c, ...} in 0..1, gun pattern,
+               stats) or addon (slot + kind,
                stats and/or weapon)
 
   python3 tools/check_sets.py
@@ -33,7 +34,6 @@ NATO_GUNS = {"spread", "stream", "forwardAndDown"}
 NATO_PLANE_STATS = {"damage", "fireInterval", "hull", "speed", "regen"}
 NATO_KINDS = {"firepower": "gun", "bombs": "payload", "missiles": "payload", "drone": "support", "warthog": "support"}
 NATO_ADDON_STATS = {"damage", "fireRate", "crit"}
-NATO_OPS = {"poly", "ellipse", "rect", "line"}
 
 
 def check_clash(it, err):
@@ -122,13 +122,17 @@ def main():
             for k in ("name", "order", "items"):
                 if k not in s:
                     err(f"missing {k}")
-            models = s.get("models", {})
-            for name, m in models.items():
+            models = {}
+            for m in s.get("models", []):
+                name = m.get("id", "?")
+                models[name] = m
                 if not isinstance(m.get("w"), int) or not isinstance(m.get("h"), int) or not m.get("ops"):
                     err(f"model {name} needs w, h and ops")
                 for op in m.get("ops", []):
-                    if not op or op[0] not in NATO_OPS:
-                        err(f"model {name}: unknown op {op[:1]}")
+                    need = {"poly": ("pts",), "ellipse": ("x", "y", "rx", "ry"), "rect": ("x0", "y0", "x1", "y1"),
+                            "line": ("x0", "y0", "x1", "y1", "t")}.get(op.get("op"))
+                    if need is None or "c" not in op or any(k not in op for k in need):
+                        err(f"model {name}: bad shape {op}")
             for it in s.get("items", []):
                 iid = it.get("id", "?")
                 e = lambda msg, iid=iid: err(msg, iid)
@@ -145,6 +149,41 @@ def main():
                     check_clash(it, e)
                 elif game == "nato-squad":
                     check_nato(it, e, models)
+        # one-use cosmetics: NATO Squad stickers, 2D Clash tattoos
+        for fname, kind in (("stickers.json", "sticker"), ("tattoos.json", "tattoo")):
+            fp = os.path.join(games, game, fname)
+            if not os.path.exists(fp):
+                continue
+            path = f"games/{game}/{fname}"
+            try:
+                items = json.load(open(fp, encoding="utf-8")).get("items", [])
+            except Exception as ex:
+                problems.append(f"{path}: not valid JSON ({ex})")
+                continue
+            for it in items:
+                iid = it.get("id", "?")
+                def e(msg, iid=iid): problems.append(f"{path} {iid}: {msg}")
+                if not re.match(rf"^{kind}-[a-z0-9-]+$", iid):
+                    e(f"id must start with {kind}- (lowercase-hyphens)")
+                if iid in seen:
+                    e("duplicate id")
+                seen[iid] = fname
+                if it.get("rarity") not in RARITIES:
+                    e(f"rarity must be one of {sorted(RARITIES)}")
+                if not it.get("name") or not it.get("shapes"):
+                    e("needs a name and shapes")
+                for sh in it.get("shapes", []):
+                    col = sh.get("c", "")
+                    if kind == "sticker":
+                        if it.get("anchor") not in ("nose", "tail", "body", "all"):
+                            e("anchor must be nose, tail, body or all")
+                        if col not in ("body", "accent") and not HEX.match(col):
+                            e(f"color {col!r} must be #RRGGBB, body or accent")
+                    else:
+                        if sh.get("s") not in ("tri", "circle", "rect") or any(k not in sh for k in ("x", "y", "w", "h")):
+                            e(f"bad shape {sh}")
+                        if col != "ink" and not HEX.match(col):
+                            e(f"color {col!r} must be ink or #RRGGBB")
         print(f"{game}: {len(seen)} items checked")
     if problems:
         print("\n".join(problems))
