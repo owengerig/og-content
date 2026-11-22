@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "files": [
     {
       "path": "games/card-combat/store.json",
@@ -8,6 +8,10 @@
     {
       "path": "games/card-combat/floaters/card.png",
       "sha": "1ba847038d0ccbc3efeedd54a857a5b497bd2d8f"
+    },
+    {
+      "path": "games/card-combat/sets/zero.json",
+      "sha": "34fcb04931428903b56b8a21c60d8d34bc96a09a"
     }
   ]
 }

@@ -1,0 +1,1413 @@
+{
+ "_comment": "Card Combat's Set Zero. Every card: id (never renamed: collections and decks store it), name, color (Red, Navy, Green, White), type (Minion, Spell, Armor, Weapon, Enchant, Relic), rarity, cost, and attack / health / armor / slot / keywords / target as the type needs; effects: {effect, trigger, scope, amount, amount2, param} using the game's effect ids. art = texture name in the game (empty: generated art). collectible false = a token. The pack is sold in the store.",
+ "id": "zero",
+ "name": "Zero",
+ "order": 0,
+ "description": "The first set. 4 colors, 6 card types.",
+ "pack": {
+  "id": "pack_zero",
+  "name": "Set Zero Pack",
+  "price": 300,
+  "art": "pack_gold"
+ },
+ "cards": [
+  {
+   "id": "r_ember_imp",
+   "name": "Ember Imp",
+   "color": "Red",
+   "type": "Minion",
+   "rarity": "common",
+   "cost": 1,
+   "attack": 2,
+   "health": 1,
+   "art": "imp",
+   "flavor": "Small, hot and very rude."
+  },
+  {
+   "id": "r_flame_hound",
+   "name": "Flame Hound",
+   "color": "Red",
+   "type": "Minion",
+   "rarity": "common",
+   "cost": 2,
+   "attack": 2,
+   "health": 2,
+   "keywords": "Haste",
+   "art": "hell_hound"
+  },
+  {
+   "id": "r_lava_brute",
+   "name": "Lava Brute",
+   "color": "Red",
+   "type": "Minion",
+   "rarity": "common",
+   "cost": 3,
+   "attack": 4,
+   "health": 3,
+   "art": "lava_beast"
+  },
+  {
+   "id": "r_fireball",
+   "name": "Fireball",
+   "color": "Red",
+   "type": "Spell",
+   "rarity": "common",
+   "cost": 2,
+   "effects": [
+    {
+     "effect": "damage",
+     "trigger": "OnPlay",
+     "scope": "Target",
+     "amount": 3
+    }
+   ],
+   "target": "AnyMinionOrCharacter",
+   "art": "spell_fire"
+  },
+  {
+   "id": "r_hot_stones",
+   "name": "Hot Stones",
+   "color": "Red",
+   "type": "Spell",
+   "rarity": "common",
+   "cost": 1,
+   "effects": [
+    {
+     "effect": "damage",
+     "trigger": "OnPlay",
+     "scope": "AllEnemyMinions",
+     "amount": 1
+    }
+   ],
+   "art": "hot_stones"
+  },
+  {
+   "id": "r_bloodlust",
+   "name": "Bloodlust Potion",
+   "color": "Red",
+   "type": "Spell",
+   "rarity": "common",
+   "cost": 1,
+   "effects": [
+    {
+     "effect": "buff",
+     "trigger": "OnPlay",
+     "scope": "Target",
+     "amount": 2
+    },
+    {
+     "effect": "keyword",
+     "trigger": "OnPlay",
+     "scope": "Target",
+     "param": "Haste"
+    }
+   ],
+   "target": "FriendlyMinion",
+   "art": "potion_red"
+  },
+  {
+   "id": "r_flame_sword",
+   "name": "Flametongue Sword",
+   "color": "Red",
+   "type": "Weapon",
+   "rarity": "common",
+   "cost": 2,
+   "attack": 3,
+   "art": "fire_sword"
+  },
+  {
+   "id": "r_scorched_helm",
+   "name": "Scorched Helm",
+   "color": "Red",
+   "type": "Armor",
+   "rarity": "common",
+   "cost": 1,
+   "slot": "Head",
+   "armor": 2
+  },
+  {
+   "id": "r_spiked_pauldrons",
+   "name": "Spiked Pauldrons",
+   "color": "Red",
+   "type": "Armor",
+   "rarity": "common",
+   "cost": 2,
+   "slot": "Chest",
+   "armor": 2,
+   "effects": [
+    {
+     "effect": "char_attack",
+     "trigger": "Static",
+     "scope": "Self",
+     "amount": 1
+    }
+   ]
+  },
+  {
+   "id": "r_war_totem",
+   "name": "War Totem",
+   "color": "Red",
+   "type": "Relic",
+   "rarity": "rare",
+   "cost": 3,
+   "effects": [
+    {
+     "effect": "char_attack",
+     "trigger": "Static",
+     "scope": "Self",
+     "amount": 2
+    }
+   ]
+  },
+  {
+   "id": "r_ashen_raider",
+   "name": "Ashen Raider",
+   "color": "Red",
+   "type": "Minion",
+   "rarity": "rare",
+   "cost": 3,
+   "attack": 3,
+   "health": 2,
+   "keywords": "Haste, Vigilant",
+   "art": "firefox",
+   "flavor": "Strikes, and is already back on guard."
+  },
+  {
+   "id": "r_aerial_strike",
+   "name": "Aerial Strike",
+   "color": "Red",
+   "type": "Spell",
+   "rarity": "rare",
+   "cost": 3,
+   "effects": [
+    {
+     "effect": "damage",
+     "trigger": "OnPlay",
+     "scope": "AllEnemyMinions",
+     "amount": 2
+    }
+   ],
+   "art": "aerial_strike"
+  },
+  {
+   "id": "r_firebomb",
+   "name": "Firebomb",
+   "color": "Red",
+   "type": "Spell",
+   "rarity": "rare",
+   "cost": 4,
+   "effects": [
+    {
+     "effect": "damage",
+     "trigger": "OnPlay",
+     "scope": "Target",
+     "amount": 5
+    }
+   ],
+   "target": "EnemyMinionOrCharacter",
+   "art": "trap_bomb"
+  },
+  {
+   "id": "r_molten_crack",
+   "name": "Molten Crack",
+   "color": "Red",
+   "type": "Spell",
+   "rarity": "rare",
+   "cost": 2,
+   "effects": [
+    {
+     "effect": "damage",
+     "trigger": "OnPlay",
+     "scope": "Target",
+     "amount": 2
+    },
+    {
+     "effect": "freeze",
+     "trigger": "OnPlay",
+     "scope": "Target",
+     "amount": 1
+    }
+   ],
+   "target": "EnemyMinion",
+   "art": "trap_crack"
+  },
+  {
+   "id": "r_berserker_rune",
+   "name": "Berserker Rune",
+   "color": "Red",
+   "type": "Enchant",
+   "rarity": "rare",
+   "cost": 2,
+   "target": "FriendlyMinion",
+   "effects": [
+    {
+     "effect": "stats",
+     "trigger": "Static",
+     "scope": "ThisCard",
+     "amount": 3
+    },
+    {
+     "effect": "keyword",
+     "trigger": "Static",
+     "scope": "ThisCard",
+     "param": "Vigilant"
+    }
+   ],
+   "art": "furious_wolf"
+  },
+  {
+   "id": "r_explosive_gift",
+   "name": "Explosive Gift",
+   "color": "Red",
+   "type": "Spell",
+   "rarity": "rare",
+   "cost": 3,
+   "effects": [
+    {
+     "effect": "damage",
+     "trigger": "OnPlay",
+     "scope": "Opponent",
+     "amount": 3
+    },
+    {
+     "effect": "draw",
+     "trigger": "OnPlay",
+     "scope": "Self",
+     "amount": 1
+    }
+   ],
+   "art": "trap_expode"
+  },
+  {
+   "id": "r_fire_elemental",
+   "name": "Fire Elemental",
+   "color": "Red",
+   "type": "Minion",
+   "rarity": "epic",
+   "cost": 5,
+   "attack": 5,
+   "health": 5,
+   "effects": [
+    {
+     "effect": "damage",
+     "trigger": "OnPlay",
+     "scope": "Opponent",
+     "amount": 2
+    }
+   ],
+   "art": "spirit_fire"
+  },
+  {
+   "id": "r_meteor_volley",
+   "name": "Meteor Volley",
+   "color": "Red",
+   "type": "Spell",
+   "rarity": "epic",
+   "cost": 4,
+   "effects": [
+    {
+     "effect": "damage",
+     "trigger": "OnPlay",
+     "scope": "Target",
+     "amount": 4
+    },
+    {
+     "effect": "damage",
+     "trigger": "OnPlay",
+     "scope": "Opponent",
+     "amount": 2
+    }
+   ],
+   "target": "AnyMinion",
+   "art": "fire_projectiles"
+  },
+  {
+   "id": "r_inferno_plate",
+   "name": "Inferno Plate",
+   "color": "Red",
+   "type": "Armor",
+   "rarity": "epic",
+   "cost": 4,
+   "slot": "Chest",
+   "armor": 5,
+   "effects": [
+    {
+     "effect": "damage",
+     "trigger": "OnPlay",
+     "scope": "AllEnemyMinions",
+     "amount": 1
+    }
+   ],
+   "art": "town_volano"
+  },
+  {
+   "id": "r_phoenix_ember",
+   "name": "Phoenix Ember",
+   "color": "Red",
+   "type": "Relic",
+   "rarity": "epic",
+   "cost": 4,
+   "effects": [
+    {
+     "effect": "damage",
+     "trigger": "StartOfTurn",
+     "scope": "Opponent",
+     "amount": 1
+    }
+   ],
+   "art": "pheonix_egg"
+  },
+  {
+   "id": "r_volcano_titan",
+   "name": "Volcano Titan",
+   "color": "Red",
+   "type": "Minion",
+   "rarity": "mythic",
+   "cost": 7,
+   "attack": 8,
+   "health": 7,
+   "keywords": "Haste",
+   "art": "fire_element",
+   "flavor": "The mountain got up and walked."
+  },
+  {
+   "id": "r_armageddon",
+   "name": "Armageddon",
+   "color": "Red",
+   "type": "Spell",
+   "rarity": "mythic",
+   "cost": 8,
+   "effects": [
+    {
+     "effect": "damage",
+     "trigger": "OnPlay",
+     "scope": "AllMinions",
+     "amount": 5
+    },
+    {
+     "effect": "damage",
+     "trigger": "OnPlay",
+     "scope": "BothPlayers",
+     "amount": 3
+    }
+   ],
+   "art": "armageddon"
+  },
+  {
+   "id": "n_tide_caller",
+   "name": "Tide Caller",
+   "color": "Navy",
+   "type": "Minion",
+   "rarity": "common",
+   "cost": 2,
+   "attack": 1,
+   "health": 2,
+   "effects": [
+    {
+     "effect": "draw",
+     "trigger": "OnPlay",
+     "scope": "Self",
+     "amount": 1
+    }
+   ],
+   "art": "octopus"
+  },
+  {
+   "id": "n_frost_penguin",
+   "name": "Frost Penguin",
+   "color": "Navy",
+   "type": "Minion",
+   "rarity": "common",
+   "cost": 2,
+   "attack": 2,
+   "health": 3,
+   "art": "penguin",
+   "flavor": "Dressed for every occasion."
+  },
+  {
+   "id": "n_reef_guardian",
+   "name": "Reef Guardian",
+   "color": "Navy",
+   "type": "Minion",
+   "rarity": "common",
+   "cost": 3,
+   "attack": 2,
+   "health": 5,
+   "art": "turtle"
+  },
+  {
+   "id": "n_sea_storm",
+   "name": "Sea Storm",
+   "color": "Navy",
+   "type": "Spell",
+   "rarity": "common",
+   "cost": 1,
+   "effects": [
+    {
+     "effect": "freeze",
+     "trigger": "OnPlay",
+     "scope": "Target",
+     "amount": 1
+    }
+   ],
+   "target": "AnyMinion",
+   "art": "sea-storm"
+  },
+  {
+   "id": "n_submerge",
+   "name": "Submerge",
+   "color": "Navy",
+   "type": "Spell",
+   "rarity": "common",
+   "cost": 3,
+   "effects": [
+    {
+     "effect": "bounce",
+     "trigger": "OnPlay",
+     "scope": "Target"
+    }
+   ],
+   "target": "AnyMinion",
+   "art": "submerge"
+  },
+  {
+   "id": "n_arcane_insight",
+   "name": "Arcane Insight",
+   "color": "Navy",
+   "type": "Spell",
+   "rarity": "common",
+   "cost": 3,
+   "effects": [
+    {
+     "effect": "draw",
+     "trigger": "OnPlay",
+     "scope": "Self",
+     "amount": 2
+    }
+   ],
+   "art": "potion_blue"
+  },
+  {
+   "id": "n_undertow",
+   "name": "Undertow",
+   "color": "Navy",
+   "type": "Spell",
+   "rarity": "common",
+   "cost": 2,
+   "effects": [
+    {
+     "effect": "mill",
+     "trigger": "OnPlay",
+     "scope": "Target",
+     "amount": 3
+    }
+   ],
+   "target": "AnyCharacter",
+   "art": "trap_fish"
+  },
+  {
+   "id": "n_coral_helm",
+   "name": "Coral Helm",
+   "color": "Navy",
+   "type": "Armor",
+   "rarity": "common",
+   "cost": 2,
+   "slot": "Head",
+   "armor": 3,
+   "art": "crab"
+  },
+  {
+   "id": "n_kraken_tooth",
+   "name": "Kraken Tooth",
+   "color": "Navy",
+   "type": "Relic",
+   "rarity": "common",
+   "cost": 2,
+   "effects": [
+    {
+     "effect": "char_attack",
+     "trigger": "Static",
+     "scope": "Self",
+     "amount": 1
+    }
+   ]
+  },
+  {
+   "id": "n_water_spirit",
+   "name": "Water Spirit",
+   "color": "Navy",
+   "type": "Minion",
+   "rarity": "rare",
+   "cost": 4,
+   "attack": 3,
+   "health": 4,
+   "keywords": "Elusive",
+   "art": "spirit_water"
+  },
+  {
+   "id": "n_sea_mine",
+   "name": "Sea Mine",
+   "color": "Navy",
+   "type": "Spell",
+   "rarity": "rare",
+   "cost": 3,
+   "effects": [
+    {
+     "effect": "damage",
+     "trigger": "OnPlay",
+     "scope": "Target",
+     "amount": 3
+    }
+   ],
+   "target": "AnyMinion",
+   "art": "trap_mine"
+  },
+  {
+   "id": "n_frost_brand",
+   "name": "Frost Brand",
+   "color": "Navy",
+   "type": "Enchant",
+   "rarity": "rare",
+   "cost": 2,
+   "target": "FriendlyMinion",
+   "effects": [
+    {
+     "effect": "stats",
+     "trigger": "Static",
+     "scope": "ThisCard",
+     "amount": 1,
+     "amount2": 1
+    },
+    {
+     "effect": "keyword",
+     "trigger": "Static",
+     "scope": "ThisCard",
+     "param": "Elusive"
+    }
+   ],
+   "art": "eel"
+  },
+  {
+   "id": "n_trident",
+   "name": "Tidecaller Trident",
+   "color": "Navy",
+   "type": "Weapon",
+   "rarity": "rare",
+   "cost": 3,
+   "attack": 2,
+   "effects": [
+    {
+     "effect": "draw",
+     "trigger": "OnPlay",
+     "scope": "Self",
+     "amount": 1
+    }
+   ],
+   "art": "shark"
+  },
+  {
+   "id": "n_chrono_surge",
+   "name": "Chrono Surge",
+   "color": "Navy",
+   "type": "Spell",
+   "rarity": "rare",
+   "cost": 2,
+   "effects": [
+    {
+     "effect": "time_shift",
+     "trigger": "OnPlay",
+     "scope": "Target",
+     "amount": 2,
+     "amount2": 1
+    }
+   ],
+   "target": "AnyCharacter",
+   "art": "spell_water",
+   "flavor": "Tomorrow's power, today."
+  },
+  {
+   "id": "n_hibernate",
+   "name": "Hibernate",
+   "color": "Navy",
+   "type": "Spell",
+   "rarity": "epic",
+   "cost": 3,
+   "effects": [
+    {
+     "effect": "time_shift",
+     "trigger": "OnPlay",
+     "scope": "Target",
+     "amount": -2,
+     "amount2": 2
+    }
+   ],
+   "target": "AnyCharacter",
+   "art": "hibernate",
+   "flavor": "Wake me in a couple of rounds."
+  },
+  {
+   "id": "n_abyssal_net",
+   "name": "Abyssal Net",
+   "color": "Navy",
+   "type": "Spell",
+   "rarity": "epic",
+   "cost": 4,
+   "effects": [
+    {
+     "effect": "mill",
+     "trigger": "OnPlay",
+     "scope": "Target",
+     "amount": 6
+    }
+   ],
+   "target": "AnyCharacter",
+   "art": "trap_net"
+  },
+  {
+   "id": "n_deep_kraken",
+   "name": "Deep Kraken",
+   "color": "Navy",
+   "type": "Minion",
+   "rarity": "epic",
+   "cost": 6,
+   "attack": 6,
+   "health": 6,
+   "effects": [
+    {
+     "effect": "freeze",
+     "trigger": "OnPlay",
+     "scope": "AllEnemyMinions",
+     "amount": 1
+    }
+   ],
+   "art": "kraken"
+  },
+  {
+   "id": "n_tidal_wave",
+   "name": "Tidal Wave",
+   "color": "Navy",
+   "type": "Spell",
+   "rarity": "epic",
+   "cost": 5,
+   "effects": [
+    {
+     "effect": "damage",
+     "trigger": "OnPlay",
+     "scope": "AllEnemyMinions",
+     "amount": 2
+    },
+    {
+     "effect": "freeze",
+     "trigger": "OnPlay",
+     "scope": "AllEnemyMinions",
+     "amount": 1
+    }
+   ],
+   "art": "flood"
+  },
+  {
+   "id": "n_leviathan",
+   "name": "Leviathan",
+   "color": "Navy",
+   "type": "Minion",
+   "rarity": "mythic",
+   "cost": 8,
+   "attack": 8,
+   "health": 8,
+   "effects": [
+    {
+     "effect": "bounce",
+     "trigger": "OnPlay",
+     "scope": "AllOtherMinions"
+    }
+   ],
+   "art": "sea_monster"
+  },
+  {
+   "id": "n_eternal_hourglass",
+   "name": "Eternal Hourglass",
+   "color": "Navy",
+   "type": "Relic",
+   "rarity": "mythic",
+   "cost": 5,
+   "effects": [
+    {
+     "effect": "energy",
+     "trigger": "Static",
+     "scope": "Self",
+     "amount": 1
+    }
+   ],
+   "art": "ring",
+   "flavor": "Every grain is a second chance."
+  },
+  {
+   "id": "g_sprout",
+   "name": "Forest Sprout",
+   "color": "Green",
+   "type": "Minion",
+   "rarity": "common",
+   "cost": 1,
+   "attack": 1,
+   "health": 2,
+   "effects": [
+    {
+     "effect": "heal",
+     "trigger": "OnDeath",
+     "scope": "Self",
+     "amount": 2
+    }
+   ],
+   "art": "tree"
+  },
+  {
+   "id": "g_boar",
+   "name": "Thornback Boar",
+   "color": "Green",
+   "type": "Minion",
+   "rarity": "common",
+   "cost": 2,
+   "attack": 3,
+   "health": 2,
+   "art": "hedgehog"
+  },
+  {
+   "id": "g_bear",
+   "name": "Woodland Bear",
+   "color": "Green",
+   "type": "Minion",
+   "rarity": "common",
+   "cost": 3,
+   "attack": 3,
+   "health": 4,
+   "art": "bear"
+  },
+  {
+   "id": "g_moss_wolf",
+   "name": "Moss Wolf",
+   "color": "Green",
+   "type": "Minion",
+   "rarity": "common",
+   "cost": 4,
+   "attack": 4,
+   "health": 5,
+   "art": "wolf"
+  },
+  {
+   "id": "g_plant_growth",
+   "name": "Plant Growth",
+   "color": "Green",
+   "type": "Spell",
+   "rarity": "common",
+   "cost": 2,
+   "effects": [
+    {
+     "effect": "buff",
+     "trigger": "OnPlay",
+     "scope": "Target",
+     "amount": 2,
+     "amount2": 2
+    }
+   ],
+   "target": "FriendlyMinion",
+   "art": "plant_growth"
+  },
+  {
+   "id": "g_healing_draught",
+   "name": "Healing Draught",
+   "color": "Green",
+   "type": "Spell",
+   "rarity": "common",
+   "cost": 1,
+   "effects": [
+    {
+     "effect": "heal",
+     "trigger": "OnPlay",
+     "scope": "Self",
+     "amount": 5
+    }
+   ],
+   "art": "potion_green"
+  },
+  {
+   "id": "g_spike_trap",
+   "name": "Spike Trap",
+   "color": "Green",
+   "type": "Spell",
+   "rarity": "common",
+   "cost": 2,
+   "effects": [
+    {
+     "effect": "damage",
+     "trigger": "OnPlay",
+     "scope": "Target",
+     "amount": 3
+    }
+   ],
+   "target": "EnemyMinion",
+   "art": "trap_spike"
+  },
+  {
+   "id": "g_barkskin",
+   "name": "Barkskin Greaves",
+   "color": "Green",
+   "type": "Armor",
+   "rarity": "common",
+   "cost": 2,
+   "slot": "Legs",
+   "armor": 3,
+   "art": "armored_beast"
+  },
+  {
+   "id": "g_thorn_mail",
+   "name": "Thorn Mail",
+   "color": "Green",
+   "type": "Armor",
+   "rarity": "rare",
+   "cost": 3,
+   "slot": "Chest",
+   "armor": 3,
+   "effects": [
+    {
+     "effect": "char_attack",
+     "trigger": "Static",
+     "scope": "Self",
+     "amount": 1
+    }
+   ]
+  },
+  {
+   "id": "g_stampede_rhino",
+   "name": "Stampeding Rhino",
+   "color": "Green",
+   "type": "Minion",
+   "rarity": "rare",
+   "cost": 4,
+   "attack": 5,
+   "health": 3,
+   "keywords": "Overrun",
+   "flavor": "Blocking it is a suggestion."
+  },
+  {
+   "id": "r_battering_ogre",
+   "name": "Battering Ogre",
+   "color": "Red",
+   "type": "Minion",
+   "rarity": "common",
+   "cost": 3,
+   "attack": 4,
+   "health": 2,
+   "keywords": "Overrun"
+  },
+  {
+   "id": "g_dragon_egg",
+   "name": "Dragon Egg",
+   "color": "Green",
+   "type": "Minion",
+   "rarity": "rare",
+   "cost": 2,
+   "attack": 0,
+   "health": 4,
+   "effects": [
+    {
+     "effect": "summon",
+     "trigger": "OnDeath",
+     "scope": "Self",
+     "amount": 1,
+     "param": "g_whelp"
+    }
+   ],
+   "art": "dragon_egg"
+  },
+  {
+   "id": "g_wild_growth",
+   "name": "Wild Growth",
+   "color": "Green",
+   "type": "Spell",
+   "rarity": "rare",
+   "cost": 3,
+   "effects": [
+    {
+     "effect": "summon",
+     "trigger": "OnPlay",
+     "scope": "Self",
+     "amount": 2,
+     "param": "g_sapling"
+    }
+   ],
+   "art": "spell_forest"
+  },
+  {
+   "id": "g_grove_spirit",
+   "name": "Grovekeeper Spirit",
+   "color": "Green",
+   "type": "Minion",
+   "rarity": "rare",
+   "cost": 5,
+   "attack": 5,
+   "health": 6,
+   "keywords": "Lifesteal",
+   "art": "spirit_forest"
+  },
+  {
+   "id": "g_toxic_fang",
+   "name": "Toxic Fang",
+   "color": "Green",
+   "type": "Enchant",
+   "rarity": "rare",
+   "cost": 2,
+   "target": "FriendlyMinion",
+   "effects": [
+    {
+     "effect": "keyword",
+     "trigger": "Static",
+     "scope": "ThisCard",
+     "param": "Toxic"
+    }
+   ],
+   "art": "snake"
+  },
+  {
+   "id": "g_vine_whip",
+   "name": "Vine Whip",
+   "color": "Green",
+   "type": "Weapon",
+   "rarity": "rare",
+   "cost": 2,
+   "attack": 2
+  },
+  {
+   "id": "g_mammoth",
+   "name": "Stomping Mammoth",
+   "color": "Green",
+   "type": "Minion",
+   "rarity": "epic",
+   "cost": 6,
+   "attack": 7,
+   "health": 7,
+   "effects": [
+    {
+     "effect": "damage",
+     "trigger": "OnPlay",
+     "scope": "AllEnemyMinions",
+     "amount": 2
+    }
+   ],
+   "art": "stomp"
+  },
+  {
+   "id": "g_overgrowth",
+   "name": "Overgrowth",
+   "color": "Green",
+   "type": "Spell",
+   "rarity": "epic",
+   "cost": 4,
+   "effects": [
+    {
+     "effect": "buff",
+     "trigger": "OnPlay",
+     "scope": "AllFriendlyMinions",
+     "amount": 1,
+     "amount2": 2
+    }
+   ],
+   "art": "town_forest"
+  },
+  {
+   "id": "g_heart_grove",
+   "name": "Heart of the Grove",
+   "color": "Green",
+   "type": "Relic",
+   "rarity": "epic",
+   "cost": 4,
+   "effects": [
+    {
+     "effect": "heal",
+     "trigger": "StartOfTurn",
+     "scope": "Self",
+     "amount": 2
+    }
+   ],
+   "art": "woodland"
+  },
+  {
+   "id": "g_elder_treant",
+   "name": "Elder Treant",
+   "color": "Green",
+   "type": "Minion",
+   "rarity": "mythic",
+   "cost": 8,
+   "attack": 9,
+   "health": 10,
+   "effects": [
+    {
+     "effect": "heal",
+     "trigger": "OnPlay",
+     "scope": "Self",
+     "amount": 10
+    }
+   ],
+   "art": "extinct",
+   "flavor": "It remembers when the forest was young."
+  },
+  {
+   "id": "g_primal_rage",
+   "name": "Primal Rage",
+   "color": "Green",
+   "type": "Spell",
+   "rarity": "mythic",
+   "cost": 5,
+   "effects": [
+    {
+     "effect": "buff",
+     "trigger": "OnPlay",
+     "scope": "AllFriendlyMinions",
+     "amount": 3
+    },
+    {
+     "effect": "keyword",
+     "trigger": "OnPlay",
+     "scope": "AllFriendlyMinions",
+     "param": "Haste"
+    }
+   ],
+   "art": "gorilla"
+  },
+  {
+   "id": "g_whelp",
+   "name": "Emerald Whelp",
+   "color": "Green",
+   "type": "Minion",
+   "rarity": "rare",
+   "cost": 4,
+   "attack": 5,
+   "health": 5,
+   "art": "dragon_green",
+   "collectible": false
+  },
+  {
+   "id": "g_sapling",
+   "name": "Sapling",
+   "color": "Green",
+   "type": "Minion",
+   "rarity": "common",
+   "cost": 1,
+   "attack": 2,
+   "health": 2,
+   "art": "woodland",
+   "collectible": false
+  },
+  {
+   "id": "w_squire",
+   "name": "Squire",
+   "color": "White",
+   "type": "Minion",
+   "rarity": "common",
+   "cost": 1,
+   "attack": 1,
+   "health": 2,
+   "keywords": "Vigilant"
+  },
+  {
+   "id": "w_shield_bearer",
+   "name": "Shield Bearer",
+   "color": "White",
+   "type": "Minion",
+   "rarity": "common",
+   "cost": 2,
+   "attack": 1,
+   "health": 4,
+   "keywords": "Vigilant",
+   "art": "shield"
+  },
+  {
+   "id": "w_lancer",
+   "name": "Dawn Lancer",
+   "color": "White",
+   "type": "Minion",
+   "rarity": "common",
+   "cost": 3,
+   "attack": 3,
+   "health": 3,
+   "keywords": "Vigilant",
+   "art": "unicorn"
+  },
+  {
+   "id": "w_divine_shield",
+   "name": "Divine Shield",
+   "color": "White",
+   "type": "Spell",
+   "rarity": "common",
+   "cost": 1,
+   "effects": [
+    {
+     "effect": "barrier",
+     "trigger": "OnPlay",
+     "scope": "Self",
+     "amount": 4
+    }
+   ]
+  },
+  {
+   "id": "w_mend",
+   "name": "Mend Wounds",
+   "color": "White",
+   "type": "Spell",
+   "rarity": "common",
+   "cost": 2,
+   "effects": [
+    {
+     "effect": "heal",
+     "trigger": "OnPlay",
+     "scope": "Target",
+     "amount": 4
+    }
+   ],
+   "target": "AnyMinionOrCharacter"
+  },
+  {
+   "id": "w_blessing",
+   "name": "Blessing",
+   "color": "White",
+   "type": "Enchant",
+   "rarity": "common",
+   "cost": 2,
+   "target": "FriendlyMinion",
+   "effects": [
+    {
+     "effect": "stats",
+     "trigger": "Static",
+     "scope": "ThisCard",
+     "amount": 1,
+     "amount2": 3
+    },
+    {
+     "effect": "keyword",
+     "trigger": "Static",
+     "scope": "ThisCard",
+     "param": "Vigilant"
+    }
+   ],
+   "art": "pheonix"
+  },
+  {
+   "id": "w_knights_helm",
+   "name": "Knight's Helm",
+   "color": "White",
+   "type": "Armor",
+   "rarity": "common",
+   "cost": 2,
+   "slot": "Head",
+   "armor": 3
+  },
+  {
+   "id": "w_longsword",
+   "name": "Longsword",
+   "color": "White",
+   "type": "Weapon",
+   "rarity": "common",
+   "cost": 3,
+   "attack": 3
+  },
+  {
+   "id": "w_temple_knight",
+   "name": "Temple Knight",
+   "color": "White",
+   "type": "Minion",
+   "rarity": "rare",
+   "cost": 4,
+   "attack": 4,
+   "health": 4,
+   "keywords": "Vigilant, Lifesteal"
+  },
+  {
+   "id": "w_lucky_coin",
+   "name": "Lucky Coin",
+   "color": "White",
+   "type": "Relic",
+   "rarity": "rare",
+   "cost": 2,
+   "effects": [
+    {
+     "effect": "barrier",
+     "trigger": "StartOfTurn",
+     "scope": "Self",
+     "amount": 1
+    }
+   ],
+   "art": "coin"
+  },
+  {
+   "id": "w_spoils",
+   "name": "Spoils of War",
+   "color": "White",
+   "type": "Spell",
+   "rarity": "rare",
+   "cost": 3,
+   "effects": [
+    {
+     "effect": "draw",
+     "trigger": "OnPlay",
+     "scope": "Self",
+     "amount": 2
+    },
+    {
+     "effect": "barrier",
+     "trigger": "OnPlay",
+     "scope": "Self",
+     "amount": 2
+    }
+   ],
+   "art": "treasure"
+  },
+  {
+   "id": "w_breastplate",
+   "name": "Radiant Breastplate",
+   "color": "White",
+   "type": "Armor",
+   "rarity": "rare",
+   "cost": 4,
+   "slot": "Chest",
+   "armor": 6
+  },
+  {
+   "id": "w_tower_shield",
+   "name": "Tower Shield",
+   "color": "White",
+   "type": "Armor",
+   "rarity": "rare",
+   "cost": 3,
+   "slot": "Shield",
+   "armor": 5
+  },
+  {
+   "id": "w_crusader_helm",
+   "name": "Crusader's Helm",
+   "color": "White",
+   "type": "Armor",
+   "rarity": "rare",
+   "cost": 3,
+   "slot": "Head",
+   "armor": 3,
+   "effects": [
+    {
+     "effect": "char_attack",
+     "trigger": "Static",
+     "scope": "Self",
+     "amount": 1
+    }
+   ]
+  },
+  {
+   "id": "w_shieldwall",
+   "name": "Shieldwall Sentinel",
+   "color": "White",
+   "type": "Minion",
+   "rarity": "common",
+   "cost": 3,
+   "attack": 2,
+   "health": 5,
+   "keywords": "Bulwark",
+   "flavor": "Two at once? Make it three."
+  },
+  {
+   "id": "w_paladin",
+   "name": "Paladin of Dawn",
+   "color": "White",
+   "type": "Minion",
+   "rarity": "epic",
+   "cost": 5,
+   "attack": 5,
+   "health": 5,
+   "effects": [
+    {
+     "effect": "barrier",
+     "trigger": "OnPlay",
+     "scope": "Self",
+     "amount": 3
+    }
+   ],
+   "keywords": "Vigilant"
+  },
+  {
+   "id": "w_judgment",
+   "name": "Judgment",
+   "color": "White",
+   "type": "Spell",
+   "rarity": "epic",
+   "cost": 5,
+   "effects": [
+    {
+     "effect": "destroy",
+     "trigger": "OnPlay",
+     "scope": "Target"
+    }
+   ],
+   "target": "AnyMinion",
+   "art": "reaper"
+  },
+  {
+   "id": "w_banner",
+   "name": "Banner of Valor",
+   "color": "White",
+   "type": "Relic",
+   "rarity": "epic",
+   "cost": 4,
+   "effects": [
+    {
+     "effect": "stats",
+     "trigger": "Static",
+     "scope": "AllFriendlyMinions",
+     "amount": 1
+    }
+   ]
+  },
+  {
+   "id": "w_hammer",
+   "name": "Sunforged Hammer",
+   "color": "White",
+   "type": "Weapon",
+   "rarity": "epic",
+   "cost": 5,
+   "attack": 5,
+   "effects": [
+    {
+     "effect": "barrier",
+     "trigger": "OnPlay",
+     "scope": "Self",
+     "amount": 3
+    }
+   ]
+  },
+  {
+   "id": "w_seraph",
+   "name": "Seraph of the Sun",
+   "color": "White",
+   "type": "Minion",
+   "rarity": "mythic",
+   "cost": 7,
+   "attack": 6,
+   "health": 8,
+   "keywords": "Vigilant, Lifesteal, Elusive",
+   "art": "seagull",
+   "flavor": "Her wings cast no shadow."
+  },
+  {
+   "id": "w_crown",
+   "name": "Crown of Ages",
+   "color": "White",
+   "type": "Relic",
+   "rarity": "mythic",
+   "cost": 6,
+   "effects": [
+    {
+     "effect": "draw",
+     "trigger": "StartOfTurn",
+     "scope": "Self",
+     "amount": 1
+    }
+   ],
+   "flavor": "Heavy is the head. Full is the hand."
+  }
+ ]
+}

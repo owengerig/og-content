@@ -7,6 +7,7 @@ mythic) and #RRGGBB colors. Then the game's own rules:
 
   2d-clash     category weapon / armor / relic, a base the game can draw (BASES below), stats, armor material,
                mythic items are elemental (fire / ice / poison, level 1-4)
+  card-combat  cards: color, type, cost, attack / health / armor, keywords, target and effects the game knows
   nato-squad   category plane (model drawn from the set's "models": shapes {op, c, ...} in 0..1, gun pattern,
                stats) or addon (slot + kind,
                stats and/or weapon)
@@ -29,6 +30,20 @@ CLASH_BASES = {
 CLASH_MATERIALS = {"cloth", "hide", "fur"}
 CLASH_STATS = {"health", "strength", "agility", "defense", "crit"}
 ELEMENTS = {"fire", "ice", "poison"}
+
+CARD_COLORS = {"red", "navy", "green", "white"}
+CARD_TYPES = {"minion", "spell", "armor", "weapon", "enchant", "relic"}
+CARD_KEYWORDS = {"haste", "vigilant", "lifesteal", "elusive", "toxic", "overrun", "bulwark"}
+CARD_TRIGGERS = {"onplay", "startofturn", "endofturn", "ondeath", "onattack", "static"}
+CARD_SCOPES = {"target", "self", "opponent", "thiscard", "allenemyminions", "allfriendlyminions", "allminions",
+               "bothplayers", "allotherminions"}
+CARD_TARGETS = {"none", "anycharacter", "enemycharacter", "friendlycharacter", "anyminion", "enemyminion",
+                "friendlyminion", "anyminionorcharacter", "enemyminionorcharacter"}
+CARD_SLOTS = {"none", "head", "chest", "legs", "shield"}
+# effect ids the game knows (Rules/Effects.cs); a new effect needs an app update first
+CARD_EFFECTS = {"damage", "heal", "draw", "extra_draw", "mill", "discard_hand", "buff", "stats", "keyword", "destroy",
+                "summon", "time_shift", "energy", "freeze", "bounce", "barrier", "drain", "ready", "char_attack",
+                "weapon_buff", "shatter"}
 
 NATO_GUNS = {"spread", "stream", "forwardAndDown"}
 NATO_PLANE_STATS = {"damage", "fireInterval", "hull", "speed", "regen"}
@@ -60,6 +75,32 @@ def check_clash(it, err):
             err("elementLevel must be 1-4")
     if it.get("rarity") == "mythic" and el == "none":
         err("mythic items are always elemental")
+
+
+def check_card(c, err, all_ids):
+    low = lambda v: str(v or "").lower()
+    if low(c.get("color")) not in CARD_COLORS:
+        err("color must be Red, Navy, Green or White")
+    t = low(c.get("type"))
+    if t not in CARD_TYPES:
+        err("type must be Minion, Spell, Armor, Weapon, Enchant or Relic")
+    if not isinstance(c.get("cost"), int) or c["cost"] < 0:
+        err("cost must be a whole number")
+    if t == "minion" and (c.get("health", 0) < 1 or c.get("attack", -1) < 0):
+        err("a minion needs attack and health")
+    if "keywords" in c and any(k.strip().lower() not in CARD_KEYWORDS for k in c["keywords"].split(",")):
+        err(f"keywords must be from {sorted(CARD_KEYWORDS)}")
+    if "target" in c and low(c["target"]) not in CARD_TARGETS:
+        err("unknown target")
+    if "slot" in c and low(c["slot"]) not in CARD_SLOTS:
+        err("unknown armor slot")
+    for e in c.get("effects", []):
+        if e.get("effect") not in CARD_EFFECTS:
+            err(f"unknown effect {e.get('effect')!r} (the game only knows {sorted(CARD_EFFECTS)})")
+        if low(e.get("trigger")) not in CARD_TRIGGERS or low(e.get("scope")) not in CARD_SCOPES:
+            err(f"effect {e.get('effect')}: bad trigger or scope")
+        if e.get("effect") == "summon" and e.get("param") not in all_ids:
+            err(f"summons {e.get('param')!r}, which isn't a card")
 
 
 def check_nato(it, err, models):
@@ -119,7 +160,7 @@ def main():
                 problems.append(f"{path}{' ' + item if item else ''}: {msg}")
             if s.get("id") != f[:-5]:
                 err(f"id must match the file name ({f[:-5]})")
-            for k in ("name", "order", "items"):
+            for k in ("name", "order", "cards" if game == "card-combat" else "items"):
                 if k not in s:
                     err(f"missing {k}")
             models = {}
@@ -133,6 +174,20 @@ def main():
                             "line": ("x0", "y0", "x1", "y1", "t")}.get(op.get("op"))
                     if need is None or "c" not in op or any(k not in op for k in need):
                         err(f"model {name}: bad shape {op}")
+            if game == "card-combat":
+                ids = {c.get("id") for c in s.get("cards", [])}
+                for c in s.get("cards", []):
+                    cid = c.get("id", "?")
+                    e = lambda msg, cid=cid: err(msg, cid)
+                    if not re.match(r"^[a-z0-9_]+$", cid):
+                        e("id must be lowercase letters, digits and underscores")
+                    if cid in seen:
+                        e(f"duplicate id (also in {seen[cid]})")
+                    seen[cid] = f
+                    if c.get("rarity") not in RARITIES:
+                        e(f"rarity must be one of {sorted(RARITIES)}")
+                    check_card(c, e, ids)
+                continue
             for it in s.get("items", []):
                 iid = it.get("id", "?")
                 e = lambda msg, iid=iid: err(msg, iid)

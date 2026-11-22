@@ -55,7 +55,7 @@ is used.
 ## Item sets
 
 Items come in themed sets, released over time (2D Clash: `paleolithic`, `copper-age`; NATO Squad: `world-war-2`,
-`modern-era`). Each set is one file, `games/<game>/sets/<set-id>.json`:
+`modern-era`; Card Combat: `zero`). Each set is one file, `games/<game>/sets/<set-id>.json`:
 
 - `id` (the file name), `name`, `order` (release order) and when it unlocks: `minLevel` (2D Clash cube level) or
   `minMission` (NATO Squad mission index, 0 = first).
@@ -70,6 +70,10 @@ Items come in themed sets, released over time (2D Clash: `paleolithic`, `copper-
   `stats` (damage, fireInterval, hull, speed, regen), `colors`. Add-ons: `slot` + `kind` (gun: firepower;
   payload: bombs, missiles; support: drone, warthog) with `stats` (damage, fireRate, crit, in %) and/or a `weapon`
   (damage, interval, count).
+
+- Card Combat: `cards` (`games/card-combat/sets/zero.json` is Set Zero) with color, type, cost, attack / health /
+  armor, keywords, target and `effects` built from the effect ids the game knows (a new effect needs an app update),
+  plus the set's booster `pack`. A downloaded set is used from the next launch.
 
 Loot picks the rarity first (og-content `economy.json`: normal enemies mostly common, bosses rare, final bosses epic
 with a tiny mythic chance), then one item of that rarity from the sets the player has reached. The store sells
