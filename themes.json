@@ -461,6 +461,30 @@
         "name": "Lavender Gray",
         "hex": "#8F86C9"
       }
+    },
+    {
+      "app": "bumblore",
+      "label": "Bumblore",
+      "primary": {
+        "id": "lore-teal",
+        "name": "Lore Teal",
+        "hex": "#1F7A8C"
+      },
+      "secondary": {
+        "id": "rift-violet",
+        "name": "Rift Violet",
+        "hex": "#7A4FD0"
+      },
+      "frame": {
+        "id": "rune-gold",
+        "name": "Rune Gold",
+        "hex": "#E8C35A"
+      },
+      "ambient": {
+        "id": "honey-amber",
+        "name": "Honey Amber",
+        "hex": "#E0962E"
+      }
     }
   ]
 }

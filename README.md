@@ -25,7 +25,7 @@ If a phone is offline, nothing breaks.
 | `games/<game>/sets/*.json` | **Item sets**: every item a game has (2D Clash weapons, armor and relics; NATO Squad planes and add-ons), each with a fixed rarity, stats and look. Nothing is randomly generated: loot and the store only pick among these. See "Item sets" below. | that game only |
 | `games/<game>/floaters/*.png` | That game's white menu-background shape (cube, jet, card, map, golf ball, book), tinted by the app | that game only |
 
-Game folders: `2d-clash`, `nato-squad`, `card-combat`, `borderline`, `pintally`, `storyhub` (each app's `gameId`).
+Game folders: `2d-clash`, `nato-squad`, `card-combat`, `borderline`, `pintally`, `storyhub`, `bumblore` (each app's `gameId`).
 An app only ever downloads the shared files and its own game folder; anything that only one game uses belongs in
 that game's folder. A new game needs just a new folder (with at least a `store.json`).
 
