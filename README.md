@@ -128,3 +128,8 @@ check on every push, and the apps run it again before using a theme, falling bac
 
 Every main menu's bottom-right corner shows `content <shared version> · game <game version>`, e.g.
 `content 1.1.0 · game 1.0.3`: the versions in `manifest.json` and `games/<game>/manifest.json`. The kit's own version (project-default) shows bottom-left after the app version.
+
+## TODO
+
+- [ ] **Turn on "Automatically delete head branches"** (Settings → General → Pull Requests), so merged branches go
+  away on their own.
