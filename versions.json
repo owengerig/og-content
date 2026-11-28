@@ -1,7 +1,7 @@
 {
   "shared": "1.1.5",
   "games": {
-    "2d-clash": "1.0.3",
+    "2d-clash": "1.0.4",
     "borderline": "1.0.0",
     "bumblore": "1.0.0",
     "card-combat": "1.0.1",
