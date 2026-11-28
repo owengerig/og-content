@@ -1,13 +1,17 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "files": [
+    {
+      "path": "games/2d-clash/emote-moods.json",
+      "sha": "c0bf9f0ff6e4fd4d8f256178278000026b1944e7"
+    },
     {
       "path": "games/2d-clash/store.json",
       "sha": "259c6228ff9d1dd3394d954d80265633b89a8461"
     },
     {
       "path": "games/2d-clash/tattoos.json",
-      "sha": "aec006b3800bd78553e6a2348db46e6f2dc197b1"
+      "sha": "2cc5183c18c4a419ec14c451789038801f83b3b7"
     },
     {
       "path": "games/2d-clash/floaters/cube.png",

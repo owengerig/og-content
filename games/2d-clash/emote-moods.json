@@ -1,0 +1,69 @@
+{
+  "_comment": "2D Clash: the mood of each emote (og-content cosmetics.json emotes). Computer enemies can use any emote, picked at random but weighted by mood: when they win, mostly happy and gloat; when they lose, mostly angry and sad; any emote can still come up. Moods: happy, gloat, angry, sad, surprised, neutral. An emote not listed here counts as neutral.",
+  "moods": [
+    {
+      "id": "gg",
+      "mood": "neutral"
+    },
+    {
+      "id": "thumbs-up",
+      "mood": "happy"
+    },
+    {
+      "id": "laugh",
+      "mood": "gloat"
+    },
+    {
+      "id": "wow",
+      "mood": "surprised"
+    },
+    {
+      "id": "heart",
+      "mood": "happy"
+    },
+    {
+      "id": "wave",
+      "mood": "neutral"
+    },
+    {
+      "id": "cool",
+      "mood": "gloat"
+    },
+    {
+      "id": "clap",
+      "mood": "happy"
+    },
+    {
+      "id": "angry",
+      "mood": "angry"
+    },
+    {
+      "id": "cry",
+      "mood": "sad"
+    },
+    {
+      "id": "thinking",
+      "mood": "neutral"
+    },
+    {
+      "id": "sleepy",
+      "mood": "neutral"
+    },
+    {
+      "id": "fire",
+      "mood": "gloat"
+    },
+    {
+      "id": "skull",
+      "mood": "sad"
+    },
+    {
+      "id": "trophy",
+      "mood": "gloat"
+    },
+    {
+      "id": "crown",
+      "mood": "gloat"
+    }
+  ]
+}
